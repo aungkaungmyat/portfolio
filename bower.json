@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "homepage": "n",
+  "authors": [
+    "Aung Myat <amyat@purdue.edu>"
+  ],
+  "description": "for adding js libraries",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.1.1"
+  }
+}
