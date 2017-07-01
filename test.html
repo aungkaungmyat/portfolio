@@ -3,8 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js">
+    </script>
   </head>
   <body>
-
+    <div id="fullpage">
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+    </div>
+    <script>
+    $(document).ready(function() {
+$('#fullpage').fullpage();
+});
+    </script>
   </body>
 </html>
