@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="test2.css">
   </head>
   <body>
-
+    <div class="dotstyle dotstyle-tooltip">
+  					<h2>Tooltip</h2>
+  					<ul>
+  						<li class="current"><a href="#">Home</a></li>
+  						<li><a href="#">About</a></li>
+  						<li><a href="#">Products</a></li>
+  						<li><a href="#">Portfolio</a></li>
+  						<li><a href="#">Blog</a></li>
+  						<li><a href="#">Contact</a></li>
+  					</ul>
+  				</div>
   <script src="test2.js"></script>
+  <script>
+			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
+				new DotNav( nav, {
+					callback : function( idx ) {
+						//console.log( idx )
+					}
+				} );
+			} );
+		</script>
   </body>
 </html>
