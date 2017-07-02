@@ -1,7 +1,10 @@
+// comment - activating fullpage.js
 $(document).ready(function() {
 $('#fullpage').fullpage();
 });
 
+
+// comment - for skills animation
 var AnimateInteractive = function($main) {
 
     this.svgContainer = $main.find("#interactive-skill");

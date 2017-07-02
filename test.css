@@ -1,23 +1,8 @@
-
-#fullpage .section:first-child{
-  background-color: red;
-}
-
-#fullpage .section:nth-child(2){
-  background-color: black;
-}
-
-#fullpage .section:nth-child(3){
-  background-color: blue;
-}
-
-#fullpage .section:nth-child(4){
-  background-color: pink;
-}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
 body {
-  font-family: "Georgia", serif;
-  font-size: 13px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1em;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
@@ -27,6 +12,22 @@ body {
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #333333;
+}
+
+#fullpage .section:first-child{
+  background-color: red;
+}
+
+#fullpage .section:nth-child(2){
+  background-color: #2f3238;
+}
+
+#fullpage .section:nth-child(3){
+  background-color: blue;
+}
+
+#fullpage .section:nth-child(4){
+  background-color: pink;
 }
 
 .intro-text {
@@ -63,7 +64,9 @@ li {
    width: 220px;
    display: inline-block;
    margin-right: 0;
-   padding-bottom: 30px;
+   margin-bottom: 10px;
+   padding: 30px 30px 30px 30px;
+   background-color: #2E5A73;
 }
 
 li .image {
@@ -83,4 +86,12 @@ li .image .row {
 svg {
   vertical-align: bottom;
   width: auto !important;
+}
+
+.wrapper ul li > p{
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  /*text-align: center;*/
 }
