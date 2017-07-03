@@ -291,10 +291,11 @@ svg {
   margin-left: 2.7em;
 }
 
-
 .no-touch .cs-style-5 figure:hover .frontend,
 .cs-style-5 figure.cs-hover .frontend  {
-	transform: scale(0.3);
+  transform: scale(0.4) translateY(40px);
+
+
 }
 
 @media screen and (max-width: 31.5em) {
