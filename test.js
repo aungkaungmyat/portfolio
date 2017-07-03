@@ -1,7 +1,7 @@
 // comment - activating fullpage.js
-// $(document).ready(function() {
-// $('#fullpage').fullpage();
-// });
+$(document).ready(function() {
+$('#fullpage').fullpage();
+});
 
 
 // comment - for skills animation
