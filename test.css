@@ -291,6 +291,19 @@ svg {
   margin-left: 2.7em;
 }
 
+/*.no-touch .cs-style-5 figure:hover img,
+.cs-style-5 figure.cs-hover img,*/
+.no-touch .cs-style-5 figure:hover .frontend,
+.cs-style-5 figure.cs-hover .frontend  {
+	/*-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1)*/
+	transform: scale(0.3);
+  /*margin-top: 5em;*/
+  /*padding-top: 5em;*/
+  /*padding: 50px 15px 15px 10px;*/
+}
+
 @media screen and (max-width: 31.5em) {
 	.grid {
 		padding: 10px 10px 100px 10px;
