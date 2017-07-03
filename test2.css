@@ -66,6 +66,8 @@ a:active {
 	padding: 70px 30px 70px 50px;
 }
 
+
+
 .grid figcaption {
 	position: absolute;
 	top: 0;
@@ -149,6 +151,7 @@ a:active {
 	right: 20px;
 }
 
+/*custom*/
 
 
 @media screen and (max-width: 31.5em) {
