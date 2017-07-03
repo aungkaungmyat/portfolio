@@ -7,7 +7,7 @@ $('#fullpage').fullpage();
 // comment - for skills animation
 var AnimateInteractive = function($main) {
 
-    this.svgContainer = $main.find("#interactive-skill");
+    this.svgContainer = $main.find("#backend-skill");
 
     if (this.svgContainer.length === 0) {
         return;
@@ -57,7 +57,7 @@ var AnimateInteractive = function($main) {
 
 
 var AnimateHTML = function($main) {
-    this.svgContainer = $main.find("#html5-skill");
+    this.svgContainer = $main.find("#tools-skill");
 
     if (this.svgContainer.length === 0) {
         return;
@@ -168,7 +168,7 @@ var AnimateEvents = function($main) {
 
 
 var AnimateSDK = function($main) {
-    this.svgContainer = $main.find("#sdk-skill");
+    this.svgContainer = $main.find("#se-skill");
 
     if (this.svgContainer.length === 0) {
         return;
@@ -276,7 +276,7 @@ var AnimateSocial = function($main) {
 
 
 var AnimateUX = function($main) {
-    this.svgContainer = $main.find("#ux-skill");
+    this.svgContainer = $main.find("#machine-skill");
 
     if (this.svgContainer.length === 0) {
         return;
@@ -347,7 +347,7 @@ var AnimateUX = function($main) {
 
 
 var AnimateWeb = function($main) {
-    this.svgContainer = $main.find("#web-skill");
+    this.svgContainer = $main.find("#moblie-skill");
 
     if (this.svgContainer.length === 0) {
         return;
@@ -405,7 +405,7 @@ var AnimateWeb = function($main) {
 
 var AnimateBrand = function($main) {
 
-    this.svgContainer = $main.find("#brand-skill");
+    this.svgContainer = $main.find("#frontend-skill");
 
     if (this.svgContainer.length === 0) {
         return;

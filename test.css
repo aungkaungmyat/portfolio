@@ -258,6 +258,39 @@ svg {
   margin-left: 1.5em;
 }
 
+.mobile{
+  background: #247878;
+}
+
+.machine{
+  background: #DBF1FA;
+
+}
+
+.frontend{
+  background: #F06060;
+}
+
+.backend{
+  background: #FFEBB5;
+}
+
+.tools{
+  background: #E7F2DD;
+}
+
+.machine svg{
+  margin-left: 2.8em;
+}
+
+.frontend svg{
+  margin-left: 2.5em;
+}
+
+.tools svg{
+  margin-left: 2.7em;
+}
+
 @media screen and (max-width: 31.5em) {
 	.grid {
 		padding: 10px 10px 100px 10px;
