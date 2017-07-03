@@ -30,16 +30,19 @@ a:active {
 
 
 .grid {
-	padding: 20px 20px 100px 20px;
+	padding: 20px 20px 20px 20px;
 	max-width: 1300px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+	/*vertical-align: bottom;*/
+	/*top: 50%;*/
+	/*margin-top: 50%;*/
 }
 
 .grid li {
 	display: inline-block;
-	width: 440px;
+	width: 340px;
 	margin: 0;
 	padding: 20px;
 	text-align: left;
