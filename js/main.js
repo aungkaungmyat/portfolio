@@ -15,6 +15,7 @@ $('#fullpage').fullpage({
         navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         // showActiveTooltip: true,
         navigationPosition: 'right',
-	    menu: '#myMenu'
+	    menu: '#myMenu',
+        responsiveWidth: 1024
 });
 });
