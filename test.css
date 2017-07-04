@@ -294,8 +294,17 @@ svg {
 .no-touch .cs-style-5 figure:hover .frontend,
 .cs-style-5 figure.cs-hover .frontend  {
   transform: scale(0.4) translateY(40px);
+}
 
+.skill-topic{
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+}
 
+.skill-topic hr{
+  width: 50%;
 }
 
 @media screen and (max-width: 31.5em) {
