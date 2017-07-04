@@ -116,7 +116,7 @@ a:hover, a:focus {
 .dotstyle-tooltip li {
 	border: 2px solid #fff;
 	border-radius: 50%;
-	z-index: 1;
+	z-index: 11;
 	-webkit-transition: border-color 0.3s ease;
 	transition: border-color 0.3s ease;
 }

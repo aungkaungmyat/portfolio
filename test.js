@@ -1,6 +1,21 @@
 // comment - activating fullpage.js
 $(document).ready(function() {
-$('#fullpage').fullpage();
+$('#fullpage').fullpage({
+    //Navigation
+		// menu: '#menu',
+		// lockAnchors: false,
+		// anchors:['firstPage', 'secondPage'],
+		// navigation: false,
+		// navigationPosition: 'right',
+		// navigationTooltips: ['firstSlide', 'secondSlide'],
+		// showActiveTooltip: false,
+		// slidesNavigation: false,
+		// slidesNavPosition: 'bottom',
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        navigation: true,
+        navigationPosition: 'right',
+	    menu: '#myMenu'
+});
 });
 
 

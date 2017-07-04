@@ -237,6 +237,10 @@ svg {
   width: 50%;
 }
 
+#fp-nav ul li a span{
+	background-color: #fff;
+}
+
 @media screen and (max-width: 31.5em) {
 	.grid {
 		padding: 10px 10px 100px 10px;
