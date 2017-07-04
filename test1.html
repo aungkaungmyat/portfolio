@@ -6,19 +6,50 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
         <link rel="stylesheet" href="test1.css" type="text/css">
+          <script src="js/modernizr.custom.js"></script>
     </head>
     <body>
-      <div class="fs-controls">
+        <!-- <div class="fs-form-wrap">
+            <div class="fs-controls">
 
-        <nav class="fs-nav-dots formfull">
-          <button class="fs-dot-current"></button>
-          <button disabled></button>
-          <button disabled></button>
-          <button disabled></button>
-        </nav>
-        </div>
+              <nav class="fs-nav-dots formfull">
+                <button class="fs-dot-current"></button>
+                <button ></button>
+                <button ></button>
+                <button ></button>
+              </nav>
+              </div>
+        </div> -->
+				<div class="container">
+       <div class="wrap clearfix">
+         <div class="dotstyle dotstyle-tooltip">
+                 <h2>Tooltip</h2>
+                 <ul>
+                   <li class="current"><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Products</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Contact</a></li>
+                 </ul>
+               </div>
+       </div>
+     </div>
 
 
+
+<!-- <script src="classie.js"></script> -->
     <script src="test1.js"></script>
+
+        <script>
+
+			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
+				new DotNav( nav, {
+					callback : function( idx ) {
+						//console.log( idx )
+					}
+				} );
+			} );
+		</script>
     </body>
 </html>
