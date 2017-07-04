@@ -1,43 +1,9 @@
-/* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-
-
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
-
-body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #b3b9bf;
-	background: #f9f9f9;
-}
-
-a {
-	color: #888;
-	text-decoration: none;
-}
-
-a:hover,
-a:active {
-	color: #333;
-}
-
-/* Header Style */
-
-
 .grid {
 	padding: 20px 20px 20px 20px;
 	max-width: 1300px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
-	/*vertical-align: bottom;*/
-	/*top: 50%;*/
-	/*margin-top: 50%;*/
 }
 
 .grid li {
@@ -62,7 +28,7 @@ a:active {
 }
 
 .image{
-	background-color: #DBF1FA;
+	background-color: #2E5A73;
 	padding: 70px 30px 70px 50px;
 }
 
@@ -84,7 +50,7 @@ a:active {
 }
 
 .grid figcaption span:before {
-	content: 'by ';
+	content: '';
 }
 
 .grid figcaption a {
@@ -152,8 +118,65 @@ a:active {
 }
 
 /*custom*/
-.container{
-	margin-top: 15vh;
+/*.container{
+	margin-top: 2vh;
+}*/
+
+svg {
+  margin-left: 1.5em;
+}
+
+.mobile{
+  background: #247878;
+}
+
+.machine{
+  background: #DBF1FA;
+
+}
+
+.frontend{
+  background: #F06060;
+}
+
+.backend{
+  background: #FFEBB5;
+}
+
+.tools{
+  background: #E7F2DD;
+}
+
+.machine svg{
+  margin-left: 2.8em;
+}
+
+.frontend svg{
+  margin-left: 2.5em;
+}
+
+.tools svg{
+  margin-left: 2.7em;
+}
+
+.no-touch .cs-style-5 figure:hover .frontend,
+.cs-style-5 figure.cs-hover .frontend  {
+  transform: scale(0.4) translateY(40px);
+}
+
+.skill-topic{
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.skill-topic hr{
+  width: 50%;
+}
+
+#fp-nav ul li a span{
+	background-color: #fff;
 }
 
 @media screen and (max-width: 31.5em) {

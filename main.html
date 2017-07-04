@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css">
-    <link rel="stylesheet" href="test2.css">
-		<script src="images0/modernizr.custom.js"></script>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/skill.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/nav.css" type="text/css"> -->
+  <script src="js/modernizr.custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js">
+  </script>
+</head>
+
+<body>
+  <div id="myMenu"></div>
+  <!-- <div class="container0" id="menu">
+  <div class="wrap clearfix">
+   <div class="dotstyle dotstyle-tooltip">
+           <ul>
+             <li class="current"><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Portfolio</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#">Contact</a></li>
+
+
+ comment - from fullpage doc
+              <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+           </ul>
+         </div>
+  </div>
+  </div> -->
+  <div id="fullpage">
+
+    <div class="section">Some section</div>
+
+    <div class="section">
+    <div class="skill-topic">
+      <p>Skills</p>
+      <hr>
+    </div>
+
     <div class="container demo-3" id="skills">
-			<!-- Top Navigation -->
-
-
 			<ul class="grid cs-style-5">
 				<li>
 					<figure>
-						<!-- <img src="images0/4.png" alt="img04"> -->
-						<div class="image">
+						<div class="image se">
               <div class="row">
-                <svg version="1.1" id="sdk-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="key" style="transform-origin: 43px 70px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><path fill="#00D9B3" d="M47.2,93c-2.1,0-4.2-0.2-6.3-0.7c-0.5-0.1-1-0.5-1.1-1c-0.2-0.5,0-1.1,0.4-1.5l14.4-14.4V64.3l-7.8-7.8
+                <svg version="1.1" id="se-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="key" style="transform-origin: 43px 70px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><path fill="#00D9B3" d="M47.2,93c-2.1,0-4.2-0.2-6.3-0.7c-0.5-0.1-1-0.5-1.1-1c-0.2-0.5,0-1.1,0.4-1.5l14.4-14.4V64.3l-7.8-7.8
                     			H35.6L21.2,70.9c-0.4,0.4-1,0.5-1.5,0.4c-0.5-0.2-0.9-0.6-1-1.1c-2.1-9.8,0.8-19.8,7.9-26.8c6.3-6.3,15-9.4,23.9-8.3L80.2,5.2
                     			c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2.1L52,37.6c-0.3,0.3-0.8,0.5-1.3,0.4c-8.2-1.1-16.3,1.5-22.1,7.4
                     			C23,51,20.3,58.8,21.2,66.7l12.7-12.7c0.3-0.3,0.7-0.4,1.1-0.4h12.3c0.4,0,0.8,0.2,1.1,0.4l8.7,8.7c0.3,0.3,0.4,0.7,0.4,1.1V76
@@ -34,18 +67,17 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Settings</h3>
-							<span>Jacob Cummings</span>
+							<h3>Software Engineering</h3>
+							<span>Advanced - Java, C, C++</span>
 							<a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 				<li>
 					<figure>
-						<!-- <img src="images0/5.png" alt="img05"> -->
-						<div class="image">
+						<div class="image mobile">
               <div class="row">
-                <svg version="1.1" id="web-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="mobile" style="transform: matrix(1, 0, 0, 1, 0, 0);"><path fill="#FFFFFF" d="M49.1,102.4c0,1.2-1,2.1-2.1,2.1H20.6c-1.2,0-2.1-1-2.1-2.1v-56c0-1.2,1-2.1,2.1-2.1h26.3
+                <svg version="1.1" id="moblie-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="mobile" style="transform: matrix(1, 0, 0, 1, 0, 0);"><path fill="#FFFFFF" d="M49.1,102.4c0,1.2-1,2.1-2.1,2.1H20.6c-1.2,0-2.1-1-2.1-2.1v-56c0-1.2,1-2.1,2.1-2.1h26.3
     					        c1.2,0,2.1,1,2.1,2.1v56H49.1z"></path><path fill="#00D9B3" d="M46.9,106H20.6c-2,0-3.6-1.6-3.6-3.6v-56c0-2,1.6-3.6,3.6-3.6h26.3c2,0,3.6,1.6,3.6,3.6v56
     					        C50.6,104.4,48.9,106,46.9,106z M20.6,45.7c-0.3,0-0.6,0.3-0.6,0.6v56c0,0.4,0.3,0.6,0.6,0.6h26.3c0.4,0,0.6-0.3,0.6-0.6v-56
     					        c0-0.4-0.3-0.6-0.6-0.6H20.6z"></path><path fill="#00D9B3" d="M35.9,97.2c0,1.2-1,2.1-2.1,2.1c-1.2,0-2.1-1-2.1-2.1c0-1.2,1-2.1,2.1-2.1C35,95,35.9,96,35.9,97.2"></path><path fill="#00D9B3" d="M35.4,76.5c2.3-0.8,3.9-2.9,3.9-5.4c0-3.2-2.6-5.7-5.7-5.7c-3.2,0-5.7,2.6-5.7,5.7v10.1
@@ -65,18 +97,17 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Safari</h3>
-							<span>Jacob Cummings</span>
+							<h3>Mobile Programming</h3>
+							<span>Beginner - Swift</span>
 							<a href="http://dribbble.com/shots/1116775-Safari">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 				<li>
 					<figure>
-						<!-- <img src="images0/1.png" alt="img01"> -->
-						<div class="image">
+						<div class="image machine">
               <div class="row">
-                <svg version="1.1" id="ux-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><line fill="#FFFFFF" x1="17.1" y1="30.8" x2="78.2" y2="91.9"></line><path fill="#00D9B3" d="M78.2,93.4c-0.4,0-0.8-0.1-1.1-0.4L16.1,31.9c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0l61.1,61.1
+                <svg version="1.1" id="machine-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><line fill="#FFFFFF" x1="17.1" y1="30.8" x2="78.2" y2="91.9"></line><path fill="#00D9B3" d="M78.2,93.4c-0.4,0-0.8-0.1-1.1-0.4L16.1,31.9c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0l61.1,61.1
                     			c0.6,0.6,0.6,1.5,0,2.1C78.9,93.2,78.6,93.4,78.2,93.4z"></path><line fill="#FFFFFF" x1="78.2" y1="30.8" x2="17.1" y2="91.9"></line><path fill="#00D9B3" d="M17.1,93.4c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l61.1-61.1c0.6-0.6,1.5-0.6,2.1,0
                     			c0.6,0.6,0.6,1.5,0,2.1L18.2,92.9C17.9,93.2,17.5,93.4,17.1,93.4z"></path><line fill="#FFFFFF" x1="47.7" y1="18.2" x2="47.7" y2="104.5"></line><path fill="#00D9B3" d="M47.7,106c-0.8,0-1.5-0.7-1.5-1.5V18.2c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v86.3
                     			C49.1,105.3,48.5,106,47.7,106z"></path><line fill="#FFFFFF" x1="90.8" y1="61.3" x2="4.5" y2="61.3"></line><path fill="#00D9B3" d="M90.8,62.8H4.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h86.3c0.8,0,1.5,0.7,1.5,1.5S91.7,62.8,90.8,62.8z"></path><line fill="#FFFFFF" x1="7.8" y1="44.8" x2="87.5" y2="77.9"></line><path fill="#00D9B3" d="M87.5,79.4c-0.2,0-0.4,0-0.6-0.1l-79.8-33c-0.8-0.3-1.1-1.2-0.8-1.9c0.3-0.8,1.2-1.1,1.9-0.8l79.8,33
@@ -93,18 +124,17 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Camera</h3>
-							<span>Jacob Cummings</span>
+							<h3>Machine Learning</h3>
+							<span>Beginner - Scikit learning, Wolfram Alpha</span>
 							<a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 				<li>
 					<figure>
-						<!-- <img src="images0/2.png" alt="img02"> -->
-            <div class="image">
+            <div class="image frontend">
               <div class="row">
-                <svg version="1.1" id="brand-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="heart"><path fill="#FFFFFF" d="M23.6,101.8c-20-11.5-19-24-19-24c0-7.3,5.9-13.2,13.2-13.2c4,0,7.5,1.8,10,4.5c2.4-2.8,6-4.5,10-4.5
+                <svg version="1.1" id="frontend-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="heart"><path fill="#FFFFFF" d="M23.6,101.8c-20-11.5-19-24-19-24c0-7.3,5.9-13.2,13.2-13.2c4,0,7.5,1.8,10,4.5c2.4-2.8,6-4.5,10-4.5
                     				c7.3,0,13.2,5.9,13.2,13.2c0,0,1,12.6-19,24h40.2"></path><path id="heartpath" fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1000" d="
                     				M23.6,101.8c-20-11.5-19-24-19-24c0-7.3,5.9-13.2,13.2-13.2c4,0,7.5,1.8,10,4.5c2.4-2.8,6-4.5,10-4.5c7.3,0,13.2,5.9,13.2,13.2
                     				c0,0,1,12.6-19,24h40.2" style="stroke-dasharray: 0px, 168.126174926758px;"></path></g><g id="pen" style="transform-origin: 23px 100px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><polygon fill="#FFFFFF" points="41.2,87.1 23.8,101.8 6.4,87.1 6.4,28.9 17.4,24.5 29,24.5 41.2,28.9 	"></polygon><polygon fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
@@ -116,18 +146,17 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Music</h3>
-							<span>Jacob Cummings</span>
+							<h3>Frontend Web Development</h3>
+							<span>Advanced - html, css, javascript, bootstrap, ajax, vue</span>
 							<a href="http://dribbble.com/shots/1115960-Music">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 				<li>
 					<figure>
-						<!-- <img src="images0/6.png" alt="img06"> -->
-            <div class="image">
+            <div class="image backend">
               <div class="row">
-                <svg version="1.1" id="interactive-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 89 90" enable-background="new 0 0 89 90" xml:space="preserve"><g id="button_bg" opacity="0" style="opacity: 0;">
+                <svg version="1.1" id="backend-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 89 90" enable-background="new 0 0 89 90" xml:space="preserve"><g id="button_bg" opacity="0" style="opacity: 0;">
                   <path fill="#00D9B3" d="M25.7,41.7c-12.4,0-22.6,10.1-22.6,22.6s10.1,22.6,22.6,22.6c12.4,0,22.6-10.1,22.6-22.6
                     			S38.2,41.7,25.7,41.7z"></path></g><g id="infobutton"><path fill="#00D9B3" d="M25.7,89.9c-14.1,0-25.6-11.5-25.6-25.6c0-14.1,11.5-25.6,25.6-25.6c14.1,0,25.6,11.5,25.6,25.6
                     			C51.3,78.4,39.8,89.9,25.7,89.9z M25.7,41.7c-12.4,0-22.6,10.1-22.6,22.6s10.1,22.6,22.6,22.6c12.4,0,22.6-10.1,22.6-22.6
@@ -147,18 +176,17 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Game Center</h3>
-							<span>Jacob Cummings</span>
+							<h3>Backend Web Programming</h3>
+							<span>Advanced - NodeJS(express) </span>
 							<a href="http://dribbble.com/shots/1118904-Game-Center">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 				<li>
 					<figure>
-						<!-- <img src="images0/3.png" alt="img03"> -->
-            <div class="image">
+            <div class="image tools">
               <div class="row">
-                <svg version="1.1" id="html5-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="star" style="transform-origin: 56.5px 44.5px 0px; transform: translate3d(0px, -5.63347031249841px, 0px);"><path fill="#00D9B3" d="M60.5,37.8c-0.6,0-1.2-0.4-1.4-1l-3.6-11l-3.6,11c-0.3,0.8-1.1,1.2-1.9,1c-0.8-0.3-1.2-1.1-1-1.9l5-15.4
+                <svg version="1.1" id="tools-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewBox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve"><g id="star" style="transform-origin: 56.5px 44.5px 0px; transform: translate3d(0px, -5.63347031249841px, 0px);"><path fill="#00D9B3" d="M60.5,37.8c-0.6,0-1.2-0.4-1.4-1l-3.6-11l-3.6,11c-0.3,0.8-1.1,1.2-1.9,1c-0.8-0.3-1.2-1.1-1-1.9l5-15.4
                     				c0.2-0.6,0.8-1,1.4-1s1.2,0.4,1.4,1l5,15.4c0.3,0.8-0.2,1.6-1,1.9C60.8,37.8,60.7,37.8,60.5,37.8z"></path><path fill="#00D9B3" d="M80.1,70c-0.5,0-0.9-0.2-1.2-0.6c-0.5-0.7-0.3-1.6,0.3-2.1l16.7-12.1H74.2c-0.8,0-1.5-0.7-1.5-1.5
                     				s0.7-1.5,1.5-1.5h26.3c0.7,0,1.2,0.4,1.4,1s0,1.3-0.5,1.7L80.9,69.7C80.7,69.9,80.4,70,80.1,70z"></path><path fill="#00D9B3" d="M27.7,108c-0.3,0-0.6-0.1-0.9-0.3c-0.5-0.4-0.7-1.1-0.5-1.7l6-18.4c0.3-0.8,1.1-1.2,1.9-1
                     				c0.8,0.3,1.2,1.1,1,1.9l-4.6,14L40.9,95c0.7-0.5,1.6-0.3,2.1,0.3c0.5,0.7,0.3,1.6-0.3,2.1l-14.1,10.2C28.3,107.9,28,108,27.7,108z
@@ -172,25 +200,20 @@
               </div>
             </div>
 						<figcaption>
-							<h3>Phone</h3>
-							<span>Jacob Cummings</span>
+							<h3>Tools</h3>
+							<span>Intermediate - Github</span>
 							<a href="http://dribbble.com/shots/1117308-Phone">Take a look</a>
 						</figcaption>
 					</figure>
 				</li>
 			</ul>
 		</div><!-- /container -->
+  </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/skill.js"></script>
+</body>
 
-	<script type="text/javascript" src="test.js"></script>
-  <script src="test2.js"></script>
-  <script>
-			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
-				new DotNav( nav, {
-					callback : function( idx ) {
-						//console.log( idx )
-					}
-				} );
-			} );
-		</script>
-  </body>
 </html>
