@@ -68,6 +68,7 @@ a:hover, a:focus {
 	display: inline-block;
 	margin: 0;
 	padding: 0;*/
+	position: absolute;
 	list-style: none;
 	cursor: default;
 	-webkit-touch-callout: none;
@@ -76,10 +77,11 @@ a:hover, a:focus {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	position: absolute;
 	top: 50%;
-	right: 60px;
+	right: 8em;
 	left: auto;
+	width: 16px;
+	height: 208px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -92,6 +94,7 @@ a:hover, a:focus {
 	width: 16px;
 	height: 16px;
 	cursor: pointer;
+	margin: 5px 0px 5px 0px;
 }
 
 .dotstyle li a {
