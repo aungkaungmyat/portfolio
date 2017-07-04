@@ -8,12 +8,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css">
   <link rel="stylesheet" href="test.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
   <script src="js/modernizr.custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js">
   </script>
 </head>
 
 <body>
+
   <div id="fullpage">
     <div class="section">Some section</div>
 
@@ -22,6 +24,20 @@
       <p>Skills</p>
       <hr>
     </div>
+    <div class="container0">
+   <div class="wrap clearfix">
+     <div class="dotstyle dotstyle-tooltip">
+             <ul>
+               <li class="current"><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+             </ul>
+           </div>
+   </div>
+  </div>
     <div class="container demo-3" id="skills">
 			<ul class="grid cs-style-5">
 				<li>
@@ -188,6 +204,7 @@
   </div>
   <script type="text/javascript" src="test.js"></script>
   <script src="test2.js"></script>
+  <script src="test1.js"></script>
   <script>
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
 				new DotNav( nav, {

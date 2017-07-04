@@ -3,13 +3,6 @@
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body {
-	background: #3B3F45;
-	color: #777;
-	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Lato', Arial, sans-serif;
-}
 
 .clearfix:before,
 .clearfix:after {
