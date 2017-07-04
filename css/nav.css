@@ -1,66 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-
-.clearfix:before,
-.clearfix:after {
-	content: '';
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-a {
-	color: #f4726d;
-	text-decoration: none;
-	outline: none;
-}
-
-a:hover, a:focus {
-	color: #c44d48;
-}
-
-
 
 /*.wrap {
 	background-color: #f4726d
 }*/
 
-
-
-.dotstyle:nth-child(4n),
-.dotstyle:nth-child(4n-3) {
-	background-color: rgba(0, 0, 0, 0.05);
-}
-
-@media screen and (max-width: 42em) {
-	.wrap > div {
-		float: none;
-		width: 100%;
-	}
-
-	.dotstyle:nth-child(4n),
-	.dotstyle:nth-child(4n-3) {
-		background-color: rgba(0, 0, 0, 0);
-	}
-
-	.dotstyle:nth-child(odd) {
-		background-color: rgba(0, 0, 0, 0.05);
-	}
-}
-
-
 /* Common styles and resets */
 
 .dotstyle ul {
-	/*position: relative;
-	display: inline-block;
-	margin: 0;
-	padding: 0;*/
 	position: absolute;
 	list-style: none;
 	cursor: default;
@@ -79,7 +26,7 @@ a:hover, a:focus {
 	transform: translateY(-50%);
 }
 
-.dotstyle li {
+/*.dotstyle li {
 	position: relative;
 	display: block;
 	float: left;
@@ -88,7 +35,7 @@ a:hover, a:focus {
 	height: 16px;
 	cursor: pointer;
 	margin: 10px 0px 10px 0px;
-}
+}*/
 
 .dotstyle li a {
 	top: 0;
@@ -197,16 +144,6 @@ a:hover, a:focus {
 	border-width: 10px;
 	margin-top: -26px;
 	margin-right: -2px;
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -10px;*/
-	/*width: 0;*/
-	/*height: 0;*/
-	/*border: solid transparent;*/
-	/*border-width: 10px;*/
-	/*border-color: transparent;*/
-	/*border-top-color: #c44d48;*/
-	/*content: '';*/
 	pointer-events: none;
 	top: 99%;
 	-webkit-backface-visibility: hidden;
