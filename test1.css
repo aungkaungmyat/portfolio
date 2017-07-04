@@ -4,7 +4,7 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-	background: #000;
+	background: blue;
 	color: #777;
 	font-weight: 400;
 	font-size: 1em;
@@ -94,7 +94,7 @@ a:hover, a:focus {
 	width: 16px;
 	height: 16px;
 	cursor: pointer;
-	margin: 5px 0px 5px 0px;
+	margin: 10px 0px 10px 0px;
 }
 
 .dotstyle li a {
@@ -128,7 +128,7 @@ a:hover, a:focus {
 	transition: border-color 0.3s ease;
 }
 
-.dotstyle-tooltip li a {
+/*.dotstyle-tooltip li a {
 	top: auto;
 	bottom: 250%;
 	left: 50%;
@@ -148,7 +148,7 @@ a:hover, a:focus {
 	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
 }
 
-.dotstyle-tooltip li a::after { /* http: //cssarrowplease.com/ */
+.dotstyle-tooltip li a::after { /* http: //cssarrowplease.com/
 	position: absolute;
 	left: 50%;
 	margin-left: -10px;
@@ -165,7 +165,68 @@ a:hover, a:focus {
 	backface-visibility: hidden;
 	-webkit-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
+}*/
+.dotstyle-tooltip li a{
+	background: #88b7d5;
+	left: 550%;
+	top: -70%;
+	bottom: auto;
+	visibility: hidden;
+	padding: 0 10px;
+	width: auto;
+	height: auto;
+	border-radius: 0;
+	background-color: #c44d48;
+	color: #fff;
+	text-indent: 0;
+	line-height: 2;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
 }
+
+.dotstyle-tooltip li a::after, .dotstyle-tooltip li a::before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.dotstyle-tooltip li a::after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #c44d48;
+	border-width: 10px;
+	margin-top: -26px;
+	margin-right: -2px;
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*margin-left: -10px;*/
+	/*width: 0;*/
+	/*height: 0;*/
+	/*border: solid transparent;*/
+	/*border-width: 10px;*/
+	/*border-color: transparent;*/
+	/*border-top-color: #c44d48;*/
+	/*content: '';*/
+	pointer-events: none;
+	top: 99%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+/*.dotstyle-tooltip li a::before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #c2e1f5;
+	border-width: 10px;
+	margin-top: -36px;
+}*/
 
 .no-touch .dotstyle-tooltip li:hover a,
 .dotstyle-tooltip li.current a {
