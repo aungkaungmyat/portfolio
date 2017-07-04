@@ -11,8 +11,10 @@ $('#fullpage').fullpage({
 		// showActiveTooltip: false,
 		// slidesNavigation: false,
 		// slidesNavPosition: 'bottom',
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        // anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         navigation: true,
+        navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+        // showActiveTooltip: true,
         navigationPosition: 'right',
 	    menu: '#myMenu'
 });
