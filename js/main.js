@@ -15,7 +15,10 @@ $('#fullpage').fullpage({
         navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         // showActiveTooltip: true,
         navigationPosition: 'right',
-	    menu: '#myMenu',
-        responsiveWidth: 1024
+	menu: '#myMenu',
+        // responsiveWidth: 1082,
+        // responsiveHeigth: 823
+        sectionSelector: '.page',
+        scrollOverflow: true
 });
 });

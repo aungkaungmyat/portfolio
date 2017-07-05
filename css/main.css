@@ -56,3 +56,10 @@ a:hover,
 a:active {
 	color: #333;
 }
+
+.fp-responsive .fp-section,
+.fp-responsive .fp-slide,
+.fp-responsive .fp-tableCell{
+    width: auto !important;
+    height: auto !important;
+}
