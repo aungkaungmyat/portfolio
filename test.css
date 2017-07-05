@@ -62,8 +62,8 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
   height:100px;
   float:left;
   transition:all 1s;
-  margin:0.5%;
-  padding:0.5%;
+  /*margin:0.5%;*/
+  /*padding:0.5%;*/
 }
 .green {
   background:#66dd99;
@@ -89,9 +89,12 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 16.6666667%; /* Fallback */
+	/*width: 16.6666667%;  Fallback
 	width: -webkit-calc(100% / 6);
-	width: calc(100% / 6);
+	width: calc(100% / 6);*/
+  width: 20%;
+	width: -webkit-calc(100% / 5);
+	width: calc(100% / 5);
 }
 
 .container div a,
