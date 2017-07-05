@@ -57,9 +57,10 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
   opacity:0;
 }
 
+
 .tile {
   width:23%;
-  height:100px;
+  height:200px;
   float:left;
   transition:all 1s;
   /*margin:0.5%;*/
