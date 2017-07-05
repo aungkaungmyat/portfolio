@@ -288,7 +288,7 @@ xgallery
 .cd-gallery li {
 
   margin-bottom: 1.6em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);*/
   display: none;
 }
 .cd-gallery li.gap {
@@ -333,6 +333,10 @@ xgallery
   }
   .cd-gallery li {
     width: 30%;
+  }
+  .cd-gallery img {
+    width: 80%;
+    margin: auto;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
