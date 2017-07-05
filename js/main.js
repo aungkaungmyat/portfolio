@@ -18,7 +18,7 @@ $('#fullpage').fullpage({
 	menu: '#myMenu',
         // responsiveWidth: 1082,
         // responsiveHeigth: 823
-        sectionSelector: '.page',
+        // sectionSelector: '.page',
         scrollOverflow: true
 });
 });
