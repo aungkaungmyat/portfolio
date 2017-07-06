@@ -315,20 +315,38 @@ xgallery
 
 .cd-gallery .overlay{
   position: absolute;
-  width: 300px;
+  /*width: 300px;*/
+  width: 0px;
   height: 100%;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+
+.cd-gallery li:hover .overlay{
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  /*height: 100%;*/
 }
 
 .cd-gallery .overlayRight{
   position: absolute;
-  width: 300px;
+  width: 0px;
   height: 100%;
   right: 0;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .cd-gallery li:hover .overlayRight{
   background: rgba(0, 0, 0, 0.5);
+    width: 50%;
 }
+
 
 /*.cd-gallery li:hover img{
   opacity: 0.3;
@@ -353,12 +371,41 @@ xgallery
     width: 60%;
     margin: auto;
   }
-  .cd-gallery .overlay{
+  /*.cd-gallery .overlay{
     position: absolute;
     width: 60%;
     height: 100%;
     margin-left: 20%;
-    /*margin-right: 150px;*/
+    /*margin-right: 150px;
+  }*/
+  .cd-gallery .overlay{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin-left: 20%;
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 1s;
+  }
+  .cd-gallery li:hover .overlay{
+    background: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    /*height: 100%;*/
+  }
+  .cd-gallery .overlayRight{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin-right: 20%;
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 1s;
+  }
+  .cd-gallery li:hover .overlayRight{
+    background: rgba(0, 0, 0, 0.5);
+    width: 30%;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -383,8 +430,6 @@ xgallery
   }
   .cd-gallery .overlay{
     position: absolute;
-    /*width: 60%;
-    height: 100%;*/
     width: 0;
     height: 100%;
     margin-left: 20%;
@@ -400,9 +445,6 @@ xgallery
   }
   .cd-gallery .overlayRight{
     position: absolute;
-    /*width: 60%;
-    height: 100%;*/
-    /*float: right;*/
     width: 0;
     height: 100%;
     margin-right: 20%;
@@ -414,7 +456,6 @@ xgallery
   .cd-gallery li:hover .overlayRight{
     background: rgba(0, 0, 0, 0.5);
     width: 30%;
-    /*height: 100%;*/
   }
 
 }
