@@ -299,8 +299,9 @@ xgallery
 }
 .cd-gallery img {
   display: block;
-  width: 100%;
+  width: 300px;;
   height: 18em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cd-gallery .cd-fail-message {
@@ -336,7 +337,7 @@ xgallery
     width: 30%;
   }
   .cd-gallery img {
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   .cd-gallery.filter-is-visible {
