@@ -347,7 +347,19 @@ xgallery
     width: 50%;
 }
 
+.cd-gallery .text{
+  position: absolute;
+  /*margin: 0 auto;*/
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 
+.cd-gallery li:hover .text{
+  opacity: 1;
+}
 /*.cd-gallery li:hover img{
   opacity: 0.3;
 }*/
