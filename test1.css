@@ -406,6 +406,8 @@ xgallery
   left: 50%;
   bottom: 0%;
   z-index: 25;
+  margin: auto;
+  letter-spacing: 1.5px;
   transition: all .75s ease;
   transform: translateX(-50%);
   -ms-transform: translateX(-50%);
