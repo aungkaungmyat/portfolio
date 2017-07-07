@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -71,7 +72,9 @@ html * {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
+  /*font-size: 1em;*/
+  font-weight: 400;
   color: #331d35;
   background-color: #6F7684;
 }
@@ -95,8 +98,8 @@ Main Components
   color: #ffffff;
   line-height: 150px;
   text-align: center;
-  font-size: 2.4rem;
-  font-weight: 300;
+  font-size: 4em;
+  font-weight: bold;
 }
 @media only screen and (min-width: 1170px) {
   .cd-header {
@@ -292,7 +295,7 @@ xgallery
 .cd-gallery li {
 
   margin-bottom: 1.6em;
-  /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
   display: none;
 }
 .cd-gallery li.gap {
@@ -305,7 +308,7 @@ xgallery
   display: block;
   width: 300px;
   height: 18em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 .cd-gallery .cd-fail-message {
