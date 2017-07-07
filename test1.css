@@ -73,7 +73,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #331d35;
-  background-color: #e7e7e7;
+  background-color: #6F7684;
 }
 
 a {
@@ -89,7 +89,7 @@ Main Components
 .cd-header {
   position: relative;
   height: 150px;
-  background-color: #331d35;
+  background-color: #6F7684;
 }
 .cd-header h1 {
   color: #ffffff;
@@ -158,6 +158,8 @@ xtab-filter
   background-color: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   z-index: 1;
+  width: 50%;
+  margin: auto;
 }
 .cd-tab-filter-wrapper:after {
   content: "";
