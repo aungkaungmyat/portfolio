@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -319,7 +321,8 @@ xgallery
   width: 0px;
   height: 100%;
   background: #0096CE;
-  opacity: 0.3;
+  opacity: 0.7;
+  z-index: 15;
   transition: .5s ease;
   -webkit-transition-property: width; /* Safari */
   -webkit-transition-duration: 1s; /* Safari */
@@ -330,7 +333,7 @@ xgallery
 
 .cd-gallery li:hover .overlay{
   background: #0096CE;
-  opacity: 0.3;
+  opacity: 0.7;
   width: 50%;
   /*height: 100%;*/
 }
@@ -341,7 +344,7 @@ xgallery
   height: 100%;
   right: 0;
   background: #0096CE;
-  opacity: 0.3;
+  opacity: 0.7;
   transition: .5s ease;
   -webkit-transition-property: width; /* Safari */
   -webkit-transition-duration: 1s; /* Safari */
@@ -351,12 +354,18 @@ xgallery
 
 .cd-gallery li:hover .overlayRight{
   background: #0096CE;
-  opacity: 0.3;
+  opacity: 0.7;
   /*background: #0096CE;*/
     width: 50%;
 }
 
 .cd-gallery .text{
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  z-index: 25;
+  font-style: bold;
   position: absolute;
   opacity: 0;
   left: 50%;
@@ -366,11 +375,23 @@ xgallery
   -ms-transform: translateX(-50%);
 }
 
+
+.cd-gallery .text hr{
+  width: 250%;
+  border: none;
+  background-color: #fff;
+  height: 5px;
+  transform: translateX(-27%);
+  -ms-transform: translateX(-27%);
+}
+
 .cd-gallery li:hover .text{
   opacity: 1;
   transition-delay: .6s;
-  transform: translate(-50%,400%);
+  transform: translate(-50%,200%);
 }
+
+
 
 .cd-gallery .icons{
   position: absolute;
@@ -410,7 +431,7 @@ xgallery
   }
   .cd-gallery li:hover .overlay{
     background: #0096CE;
-    opacity: 0.3;
+    opacity: 0.7;
     width: 50%;
     /*height: 100%;*/
   }
@@ -426,7 +447,7 @@ xgallery
   }
   .cd-gallery li:hover .overlayRight{
     background: #0096CE;
-    opacity: 0.3;
+    opacity: 0.7;
     width: 50%;
   }
 }
@@ -462,7 +483,7 @@ xgallery
   }
   .cd-gallery li:hover .overlay{
     background: #0096CE;
-    opacity: 0.3;
+    opacity: 0.7;
     width: 50%;
     /*height: 100%;*/
   }
@@ -480,7 +501,7 @@ xgallery
   .cd-gallery li:hover .overlayRight{
     /*background: rgba(0, 0, 0, 0.5);*/
     background: #0096CE;
-    opacity: 0.3;
+    opacity: 0.7;
     width: 50%;
   }
 
