@@ -318,6 +318,8 @@ xgallery
   /*width: 300px;*/
   width: 0px;
   height: 100%;
+  background: #0096CE;
+  opacity: 0.3;
   transition: .5s ease;
   -webkit-transition-property: width; /* Safari */
   -webkit-transition-duration: 1s; /* Safari */
@@ -327,7 +329,8 @@ xgallery
 
 
 .cd-gallery li:hover .overlay{
-  background: rgba(0, 0, 0, 0.5);
+  background: #0096CE;
+  opacity: 0.3;
   width: 50%;
   /*height: 100%;*/
 }
@@ -337,6 +340,8 @@ xgallery
   width: 0px;
   height: 100%;
   right: 0;
+  background: #0096CE;
+  opacity: 0.3;
   transition: .5s ease;
   -webkit-transition-property: width; /* Safari */
   -webkit-transition-duration: 1s; /* Safari */
@@ -345,7 +350,8 @@ xgallery
 }
 
 .cd-gallery li:hover .overlayRight{
-  background: rgba(0, 0, 0, 0.5);
+  background: #0096CE;
+  opacity: 0.3;
   /*background: #0096CE;*/
     width: 50%;
 }
@@ -392,13 +398,6 @@ xgallery
     width: 100%;
     margin: auto;
   }
-  /*.cd-gallery .overlay{
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
-    /*margin-right: 150px;
-  }*/
   .cd-gallery .overlay{
     position: absolute;
     width: 0;
@@ -410,7 +409,8 @@ xgallery
     transition-duration: 1s;
   }
   .cd-gallery li:hover .overlay{
-    background: rgba(0, 0, 0, 0.5);
+    background: #0096CE;
+    opacity: 0.3;
     width: 50%;
     /*height: 100%;*/
   }
@@ -425,7 +425,8 @@ xgallery
     transition-duration: 1s;
   }
   .cd-gallery li:hover .overlayRight{
-    background: rgba(0, 0, 0, 0.5);
+    background: #0096CE;
+    opacity: 0.3;
     width: 50%;
   }
 }
@@ -460,7 +461,8 @@ xgallery
     transition-duration: 1s;
   }
   .cd-gallery li:hover .overlay{
-    background: rgba(0, 0, 0, 0.5);
+    background: #0096CE;
+    opacity: 0.3;
     width: 50%;
     /*height: 100%;*/
   }
@@ -468,6 +470,7 @@ xgallery
     position: absolute;
     width: 0;
     height: 100%;
+
     /*margin-right: 20%;*/
     -webkit-transition-property: width; /* Safari */
     -webkit-transition-duration: 1s; /* Safari */
