@@ -399,7 +399,7 @@ xgallery
 .cd-gallery li:hover .text{
   opacity: 1;
   transition-delay: .6s;
-  transform: translate(-50%,230%);
+  transform: translate(-50%,210%);
 }
 
 
@@ -442,10 +442,18 @@ xgallery
   -ms-transform: translateX(-50%);
 }
 
+.cd-gallery .readButton button{
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  background-color: #0e6a8c;
+}
+
 .cd-gallery li:hover .readButton{
   opacity: 1;
   transition-delay: 1s;
-  transform: translate(-50%,-35px);
+  transform: translate(-50%,-15px);
 }
 
 @media only screen and (min-width: 768px) {
