@@ -159,6 +159,10 @@ var buttonFilter = {
 
 $(document).ready(function($){
 	$('body').on('click', '.readButton', function () {
-		swal('Any fool can use a computer');
+		// swal('Any fool can use a computer');
+		swal({
+  title: 'Plutus App',
+	text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage."
+})
 	});
 });
