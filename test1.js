@@ -162,7 +162,10 @@ $(document).ready(function($){
 		// swal('Any fool can use a computer');
 		swal({
   title: 'Plutus App',
-	text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage."
+	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
+	html:
+		"<p>A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.</p>" +
+    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>' 
 })
 	});
 });
