@@ -165,7 +165,22 @@ $(document).ready(function($){
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.</p>" +
-    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>' 
+    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
 });
+
+var plutuses = ["images/plutus/plutus.png", "images/plutus/plutus2.jpg", "images/plutus/plutus3.jpg", "images/plutus/plutus4.jpg", "images/plutus/plutus5.jpg"];
+var plutuscount = 0;
+
+function plutusChange(){
+	document.getElementById("plutusimg").src = plutuses[plutuscount];
+	plutuscount++;
+	if(plutuscount == plutuses.length){
+		plutuscount = 0;
+	}
+}
+
+window.onload = function(){
+	window.setInterval(plutusChange, 5000);
+}
