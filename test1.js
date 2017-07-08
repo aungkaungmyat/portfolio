@@ -158,13 +158,35 @@ var buttonFilter = {
 };
 
 $(document).ready(function($){
-	$('body').on('click', '.readButton', function () {
+	$('body').on('click', '#plutusButton', function () {
 		// swal('Any fool can use a computer');
 		swal({
   title: 'Plutus App',
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.</p>" +
+    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
+})
+	});
+
+	$('body').on('click', '#mathButton', function () {
+		// swal('Any fool can use a computer');
+		swal({
+  title: 'Math-is-Love',
+	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
+	html:
+		"<p>A fun IOS math game which is intended to improve players calculation skills through game experience.</p>" +
+    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
+})
+	});
+
+	$('body').on('click', '#rollButton', function () {
+		// swal('Any fool can use a computer');
+		swal({
+  title: 'Roll.io',
+	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
+	html:
+		"<p>A desktop game in which the player has to dodge the incoming meteors and try to survive in the limited bounds</p>" +
     '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
