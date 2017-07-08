@@ -156,3 +156,9 @@ var buttonFilter = {
 		}
   	}
 };
+
+$(document).ready(function($){
+	$('body').on('click', '.readButton', function () {
+		swal('Any fool can use a computer');
+	});
+});
