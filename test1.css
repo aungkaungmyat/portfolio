@@ -293,7 +293,8 @@ xgallery
   width: 100%;
 }
 .cd-gallery li {
-
+  width: 60%;
+  margin-left: 20%;
   margin-bottom: 1.6em;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
   display: none;
@@ -306,7 +307,7 @@ xgallery
 }
 .cd-gallery img {
   display: block;
-  width: 300px;
+  width: 100%;
   height: 18em;
   /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);*/
 }
@@ -470,6 +471,7 @@ xgallery
   }
   .cd-gallery li {
     width: 40%;
+    margin-left: 0;
     margin-bottom: 2em;
   }
   .cd-gallery img {
@@ -518,6 +520,7 @@ xgallery
     transition: width 0.3s;
   }
   .cd-gallery li {
+    margin-left: 0;
     width: 25%;
   }
   .cd-gallery img {
