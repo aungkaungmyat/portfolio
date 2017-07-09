@@ -203,6 +203,18 @@ function plutusChange(){
 	}
 }
 
+var gatherings = ["images/gathering/gathering.jpg", "images/gathering/gathering2.png", "images/gathering/gathering3.png", "images/gathering/gathering4.png", "images/gathering/gathering5.png" , "images/gathering/gathering6.png"];
+var gatheringcount = 0;
+
+function gatheringChange(){
+	document.getElementById("gatheringimg").src = gatherings[gatheringcount];
+	gatheringcount++;
+	if(gatheringcount == gatherings.length){
+		gatheringcount = 0;
+}
+}
+
 window.onload = function(){
 	window.setInterval(plutusChange, 5000);
+	window.setInterval(gatheringChange, 5000);
 }
