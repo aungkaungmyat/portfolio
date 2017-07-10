@@ -225,9 +225,20 @@ function mathChange(){
 }
 }
 
+var gitdates = ["images/gitdate/gitdate.jpg", "images/gitdate/gitdate2.png", "images/gitdate/gitdate3.png", "images/gitdate/gitdate4.png"];
+var gitcount = 0;
+
+function gitdateChange(){
+	document.getElementById("gitdateimg").src = gitdates[gitcount];
+	gitcount++;
+	if(gitcount == gitdates.length){
+		gitcount = 0;
+}
+}
 
 window.onload = function(){
 	window.setInterval(plutusChange, 5000);
 	window.setInterval(gatheringChange, 5000);
 	window.setInterval(mathChange, 5000);
+	window.setInterval(gitdateChange, 5000);
 }
