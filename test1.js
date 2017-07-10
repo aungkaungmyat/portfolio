@@ -247,10 +247,23 @@ function lostChange(){
 }
 }
 
+var rolls = ["images/roll/roll.jpg", "images/roll/roll2.png", "images/roll/roll3.png", "images/roll/roll4.png", "images/roll/roll5.png"];
+var rollcount = 0;
+
+function rollChange(){
+	document.getElementById("rollimg").src = rolls[rollcount];
+	rollcount++;
+	if(rollcount == rolls.length){
+		rollcount = 0;
+}
+}
+
+
 window.onload = function(){
 	window.setInterval(plutusChange, 5000);
 	window.setInterval(gatheringChange, 5000);
 	window.setInterval(mathChange, 5000);
 	window.setInterval(gitdateChange, 5000);
 	window.setInterval(lostChange, 5000);
+	window.setInterval(rollChange, 5000);
 }
