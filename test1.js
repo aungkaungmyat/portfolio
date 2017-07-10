@@ -214,7 +214,20 @@ function gatheringChange(){
 }
 }
 
+var maths = ["images/math/math.png", "images/math/math2.png", "images/math/math3.png", "images/math/math4.png", "images/math/math5.png"];
+var mathcount = 0;
+
+function mathChange(){
+	document.getElementById("mathimg").src = maths[mathcount];
+	mathcount++;
+	if(mathcount == maths.length){
+		mathcount = 0;
+}
+}
+
+
 window.onload = function(){
 	window.setInterval(plutusChange, 5000);
 	window.setInterval(gatheringChange, 5000);
+	window.setInterval(mathChange, 5000);
 }
