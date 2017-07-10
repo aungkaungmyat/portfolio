@@ -236,9 +236,21 @@ function gitdateChange(){
 }
 }
 
+var losts = [ "images/lost/LostLogo.png", "images/lost/lost2.png", "images/lost/lost3.png", "images/lost/lost4.png"];
+var lostcount = 0;
+
+function lostChange(){
+	document.getElementById("lostimg").src = losts[lostcount];
+	lostcount++;
+	if(lostcount == losts.length){
+		lostcount = 0;
+}
+}
+
 window.onload = function(){
 	window.setInterval(plutusChange, 5000);
 	window.setInterval(gatheringChange, 5000);
 	window.setInterval(mathChange, 5000);
 	window.setInterval(gitdateChange, 5000);
+	window.setInterval(lostChange, 5000);
 }
