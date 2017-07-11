@@ -270,12 +270,6 @@ function rollChange(){
 
 var randoms = [
 	function plutusChange(){
-	// document.getElementById("plutusimg").src = plutuses[plutuscount];
-	// plutuscount++;
-	// if(plutuscount == plutuses.length){
-	// 	plutuscount = 0;
-	// }
-	// $("#plutusimg").hover(function() {
 
   $("#plutusimg").fadeTo(1000,0.30, function() {
       $("#plutusimg").attr("src",plutuses[plutuscount]);
@@ -284,15 +278,9 @@ var randoms = [
 				plutuscount = 0;
 			}
   }).fadeTo(500,1);
-//   return false;
-// });
 	},
 	function gatheringChange(){
-	//  document.getElementById("gatheringimg").src = gatherings[gatheringcount];
-	//  gatheringcount++;
-	//  if(gatheringcount == gatherings.length){
-	// 	 gatheringcount = 0;
-	// }
+
 	$("#gatheringimg").fadeTo(1000,0.30, function() {
       $("#gatheringimg").attr("src",gatherings[gatheringcount]);
 			gatheringcount++;
@@ -302,11 +290,18 @@ var randoms = [
   }).fadeTo(500,1);
 	},
 	function mathChange(){
-		document.getElementById("mathimg").src = maths[mathcount];
-		mathcount++;
-		if(mathcount == maths.length){
-			mathcount = 0;
-	}
+	// 	document.getElementById("mathimg").src = maths[mathcount];
+	// 	mathcount++;
+	// 	if(mathcount == maths.length){
+	// 		mathcount = 0;
+	// }
+	$("#mathimg").fadeTo(1000,0.30, function() {
+      $("#mathimg").attr("src",maths[mathcount]);
+			mathcount++;
+			if(mathcount == maths.length){
+				mathcount = 0;
+			}
+  }).fadeTo(500,1);
 	},
 	function gitdateChange(){
 		document.getElementById("gitdateimg").src = gitdates[gitcount];
