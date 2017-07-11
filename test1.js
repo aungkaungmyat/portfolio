@@ -258,23 +258,80 @@ function rollChange(){
 }
 }
 
+// var pairs = {
+// 	plutus: plutusChange(),
+// 	gathering: gatheringChange(),
+// 	math: mathChange(),
+// 	gitdate: gitdateChange(),
+// 	lost: lostChange(),
+// 	roll: rollChange()
+// }
 
-var randoms = ["plutusChange()" , "gatheringChange()", "mathChange()", "gitdateChange()", "lostChange()", "rollChange()"]
+
+var randoms = [
+	function plutusChange(){
+	document.getElementById("plutusimg").src = plutuses[plutuscount];
+	plutuscount++;
+	if(plutuscount == plutuses.length){
+		plutuscount = 0;
+	}
+	},
+	function gatheringChange(){
+	 document.getElementById("gatheringimg").src = gatherings[gatheringcount];
+	 gatheringcount++;
+	 if(gatheringcount == gatherings.length){
+		 gatheringcount = 0;
+	}
+	},
+	function mathChange(){
+		document.getElementById("mathimg").src = maths[mathcount];
+		mathcount++;
+		if(mathcount == maths.length){
+			mathcount = 0;
+	}
+	},
+	function gitdateChange(){
+		document.getElementById("gitdateimg").src = gitdates[gitcount];
+		gitcount++;
+		if(gitcount == gitdates.length){
+			gitcount = 0;
+	}
+	},
+	function lostChange(){
+		document.getElementById("lostimg").src = losts[lostcount];
+		lostcount++;
+		if(lostcount == losts.length){
+			lostcount = 0;
+	}
+	},
+	function rollChange(){
+		document.getElementById("rollimg").src = rolls[rollcount];
+		rollcount++;
+		if(rollcount == rolls.length){
+			rollcount = 0;
+	}
+	}]
 var randomcount =  0;
+
+function randomresult(){
+	 randoms[Math.floor((Math.random() * 5))]();
+}
 
 window.onload = function(){
 
-	// randoms[0];
-	window.setInterval(function(){
-		randoms[randomcount];
-		console.log(randoms[randomcount])
-		// randomcount++;
-		// plutusChange();
-	},5000);
+	// window.setInterval(function(){
+	// 	var nam = randomresult();
+	// 	console.log(nam);
+	// 	nam;
+	// 	// pairs.nam;
+	// },1000);
+	window.setInterval(randomresult,1000)
 	// window.setInterval(plutusChange, 5000);
 	// window.setInterval(gatheringChange, 5000);
 	// window.setInterval(mathChange, 5000);
 	// window.setInterval(gitdateChange, 5000);
 	// window.setInterval(lostChange, 5000);
 	// window.setInterval(rollChange, 5000);
+
+
 }
