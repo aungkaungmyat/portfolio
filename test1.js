@@ -270,11 +270,22 @@ function rollChange(){
 
 var randoms = [
 	function plutusChange(){
-	document.getElementById("plutusimg").src = plutuses[plutuscount];
-	plutuscount++;
-	if(plutuscount == plutuses.length){
-		plutuscount = 0;
-	}
+	// document.getElementById("plutusimg").src = plutuses[plutuscount];
+	// plutuscount++;
+	// if(plutuscount == plutuses.length){
+	// 	plutuscount = 0;
+	// }
+	// $("#plutusimg").hover(function() {
+
+  $("#plutusimg").fadeTo(1000,0.30, function() {
+      $("#plutusimg").attr("src",plutuses[plutuscount]);
+			plutuscount++;
+			if(plutuscount == plutuses.length){
+				plutuscount = 0;
+			}
+  }).fadeTo(500,1);
+//   return false;
+// });
 	},
 	function gatheringChange(){
 	 document.getElementById("gatheringimg").src = gatherings[gatheringcount];
@@ -349,3 +360,10 @@ window.onload = function(){
 
 
 }
+
+$(function(){
+    $(document).on('mouseenter', '#plutusimg', function(){
+        // document.getElementById("plutusimg").src = plutuses[0];
+				$('img').toggleClass('hidden');
+    });
+});
