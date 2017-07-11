@@ -203,13 +203,20 @@ $(document).ready(function($){
 	});
 
 	$('body').on('click', '#gitdateButton', function () {
-		// swal('Any fool can use a computer');
 		swal({
   title: 'GitDate',
-	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A Web App where people can find their partners according to their sense of humour.</p>" +
     '<a href="https://github.com/GitDate"><i class="fa fa-github"></i><span> Github</span></a>'
+})
+	});
+
+	$('body').on('click', '#lostButton', function () {
+		swal({
+  title: 'Lost & Found',
+	html:
+		"<p>A Web App where people can post whether they lose something or they find others' properties.</p>" +
+    '<a href="https://github.com/ProjectApollo11"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
 
