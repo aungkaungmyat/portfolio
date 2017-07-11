@@ -165,7 +165,7 @@ $(document).ready(function($){
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.</p>" +
-    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
+    '<a href="https://github.com/PlutusApp"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
 
@@ -176,7 +176,7 @@ $(document).ready(function($){
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A fun IOS math game which is intended to improve players calculation skills through game experience.</p>" +
-    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
+    '<a href="https://github.com/aungkaungmyat/Math-is-love"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
 
@@ -187,7 +187,7 @@ $(document).ready(function($){
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
 		"<p>A desktop game in which the player has to dodge the incoming meteors and try to survive in the limited bounds</p>" +
-    '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
+    '<a href="https://github.com/mthormati/Roll.io"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
 
@@ -197,7 +197,7 @@ $(document).ready(function($){
   title: 'Gathering App',
 	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
 	html:
-		"<p>A Web App where you can gather people of same interest to do certain activities.</p>" +
+		"<p>bodyA Web App where you can gather people of same interest to do certain activities.</p>" +
     '<a href="https://github.com/aungkaungmyat/GatheringApp"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
@@ -219,6 +219,8 @@ $(document).ready(function($){
     '<a href="https://github.com/ProjectApollo11"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
+
+	
 
 });
 
