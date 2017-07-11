@@ -289,12 +289,35 @@ var randoms = [
 			}
   }).fadeTo(500,1);
 	},
-	function mathChange(){
-	// 	document.getElementById("mathimg").src = maths[mathcount];
-	// 	mathcount++;
-	// 	if(mathcount == maths.length){
-	// 		mathcount = 0;
+	function lostChange(){
+		// document.getElementById("lostimg").src = losts[lostcount];
+		// lostcount++;
+		// if(lostcount == losts.length){
+		// 	lostcount = 0;
+		$("#lostimg").fadeTo(1000,0.30, function() {
+	      $("#lostimg").attr("src",losts[lostcount]);
+				lostcount++;
+				if(lostcount == losts.length){
+					lostcount = 0;
+				}
+	  }).fadeTo(500,1);
 	// }
+	},
+	function gitdateChange(){
+	// 	document.getElementById("gitdateimg").src = gitdates[gitcount];
+	// 	gitcount++;
+	// 	if(gitcount == gitdates.length){
+	// 		gitcount = 0;
+	// }
+	$("#gitdateimg").fadeTo(1000,0.30, function() {
+      $("#gitdateimg").attr("src",gitdates[gitcount]);
+			gitcount++;
+			if(gitcount == gitdates.length){
+				gitcount = 0;
+			}
+  }).fadeTo(500,1);
+	},
+	function mathChange(){
 	$("#mathimg").fadeTo(1000,0.30, function() {
       $("#mathimg").attr("src",maths[mathcount]);
 			mathcount++;
@@ -303,26 +326,19 @@ var randoms = [
 			}
   }).fadeTo(500,1);
 	},
-	function gitdateChange(){
-		document.getElementById("gitdateimg").src = gitdates[gitcount];
-		gitcount++;
-		if(gitcount == gitdates.length){
-			gitcount = 0;
-	}
-	},
-	function lostChange(){
-		document.getElementById("lostimg").src = losts[lostcount];
-		lostcount++;
-		if(lostcount == losts.length){
-			lostcount = 0;
-	}
-	},
 	function rollChange(){
-		document.getElementById("rollimg").src = rolls[rollcount];
-		rollcount++;
-		if(rollcount == rolls.length){
-			rollcount = 0;
-	}
+	// 	document.getElementById("rollimg").src = rolls[rollcount];
+	// 	rollcount++;
+	// 	if(rollcount == rolls.length){
+	// 		rollcount = 0;
+	// }
+	$("#rollimg").fadeTo(1000,0.30, function() {
+      $("#rollimg").attr("src",rolls[rollcount]);
+			rollcount++;
+			if(rollcount == rolls.length){
+				rollcount = 0;
+			}
+  }).fadeTo(500,1);
 	}]
 // var randomcount =  0;
 var rannum;
@@ -352,7 +368,7 @@ window.onload = function(){
 	// 	nam;
 	// 	// pairs.nam;
 	// },1000);
-	window.setInterval(randomresult,1000)
+	window.setInterval(randomresult,3000)
 	// window.setInterval(plutusChange, 5000);
 	// window.setInterval(gatheringChange, 5000);
 	// window.setInterval(mathChange, 5000);
