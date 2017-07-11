@@ -190,6 +190,17 @@ $(document).ready(function($){
     '<a href="https://github.com/aungkaungmyat"><i class="fa fa-github"></i><span> Github</span></a>'
 })
 	});
+
+	$('body').on('click', '#gatheringButton', function () {
+		// swal('Any fool can use a computer');
+		swal({
+  title: 'Gathering App',
+	// text: "A finance management app which gives item recommendations based on one's spending habit and shows expected finance result on each usage.",
+	html:
+		"<p>A Web App where you can gather people of same interest to do certain activities.</p>" +
+    '<a href="https://github.com/aungkaungmyat/GatheringApp"><i class="fa fa-github"></i><span> Github</span></a>'
+})
+	});
 });
 
 var plutuses = ["images/plutus/plutus.png", "images/plutus/plutus2.jpg", "images/plutus/plutus3.jpg", "images/plutus/plutus4.jpg", "images/plutus/plutus5.jpg"];
