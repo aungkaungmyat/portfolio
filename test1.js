@@ -311,10 +311,24 @@ var randoms = [
 			rollcount = 0;
 	}
 	}]
-var randomcount =  0;
+// var randomcount =  0;
+var rannum;
+var norepeat = 0;
 
 function randomresult(){
-	 randoms[Math.floor((Math.random() * 5))]();
+
+	 rannum = Math.floor(Math.random() * 6);
+
+	 while(rannum == norepeat){
+		 rannum = Math.floor(Math.random() * 6);
+		 if(rannum != norepeat){
+			 break;
+		 }
+	 }
+	 norepeat = rannum;
+	 console.log(norepeat)
+	//  randoms[Math.floor((Math.random() * 5))]();
+	randoms[norepeat]();
 }
 
 window.onload = function(){
