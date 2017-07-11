@@ -288,11 +288,18 @@ var randoms = [
 // });
 	},
 	function gatheringChange(){
-	 document.getElementById("gatheringimg").src = gatherings[gatheringcount];
-	 gatheringcount++;
-	 if(gatheringcount == gatherings.length){
-		 gatheringcount = 0;
-	}
+	//  document.getElementById("gatheringimg").src = gatherings[gatheringcount];
+	//  gatheringcount++;
+	//  if(gatheringcount == gatherings.length){
+	// 	 gatheringcount = 0;
+	// }
+	$("#gatheringimg").fadeTo(1000,0.30, function() {
+      $("#gatheringimg").attr("src",gatherings[gatheringcount]);
+			gatheringcount++;
+			if(gatheringcount == gatherings.length){
+				gatheringcount = 0;
+			}
+  }).fadeTo(500,1);
 	},
 	function mathChange(){
 		document.getElementById("mathimg").src = maths[mathcount];
