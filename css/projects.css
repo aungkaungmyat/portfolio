@@ -483,6 +483,10 @@ xgallery
   transform: translate(-50%,-15px);
 }
 
+.swal2-content a{
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-gallery {
     padding: 40px 11%;
