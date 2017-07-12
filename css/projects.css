@@ -50,13 +50,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }*/
-#thirdSection{
-  line-height: 1;
-}
 
 /*#thirdSection div,*/
 #thirdSection header,
-#thirdSection li,
 #thirdSection ul{
   margin: 0;
 	padding: 0;
@@ -418,7 +414,7 @@ xgallery
   opacity: 1;
   transition-delay: .6s;
   line-height: 0;
-  transform: translate(-50%,160%);
+  transform: translate(-50%,135%);
 }
 
 
