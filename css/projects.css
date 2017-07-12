@@ -125,7 +125,7 @@ Main Components
 
 .cd-main-content {
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 .cd-main-content:after {
   content: "";

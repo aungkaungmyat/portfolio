@@ -19,6 +19,8 @@ $('#fullpage').fullpage({
         // responsiveWidth: 1082,
         // responsiveHeigth: 823
         // sectionSelector: '.page',
+        touchSensitivity: 55,
+        normalScrollElementTouchThreshold: 50,
         scrollOverflow: true
 });
 });
