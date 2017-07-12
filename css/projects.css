@@ -1,56 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}*/
-/* HTML5 display-role reset for older browsers */
-/*article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}*/
-
 #thirdSection h1,
 #thirdSection ul{
   margin: 0;
@@ -72,14 +22,6 @@ Primary style
   box-sizing: border-box;
 }
 
-/*html {
-
-}
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}*/
 
 body {
   font-size: 1.6rem;
@@ -125,7 +67,7 @@ Main Components
 
 .cd-main-content {
   position: relative;
-  max-height: 100vh;
+  min-height: 80vh;
 }
 .cd-main-content:after {
   content: "";
@@ -407,8 +349,6 @@ xgallery
   border: none;
   background-color: #fff;
   height: 3px;
-  /*transform: translateX(25%);*/
-  /*-ms-transform: translateX(-27%);*/
 }
 
 
@@ -498,11 +438,7 @@ xgallery
     clear: both;
   }
   .cd-gallery li {
-    /*width: 40%;
-    margin-left: 0;
-    margin-bottom: 2em;*/
     margin: 0 2px 1.6em;
-    /*width: 25%;*/
     width: 19em;
   }
   .cd-gallery img {
