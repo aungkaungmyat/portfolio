@@ -434,10 +434,10 @@ xgallery
   transform: translate(-50%,-85px);
 }
 
-.cd-gallery li:hover .icons .oneline{
+.cd-gallery li:hover .icons .fa-apple{
   opacity: 1;
   transition-delay: .6s;
-  transform: translateY(-20px);
+  transform: translate(-50%,-90px);
 }
 
 .cd-gallery .readButton{
