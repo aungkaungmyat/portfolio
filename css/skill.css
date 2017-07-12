@@ -1,3 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+#secondSection {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #b3b9bf;
+	/*background: #f9f9f9;*/
+}
+
+#secondSection a {
+	/*color: #888;*/
+	text-decoration: none;
+}
+
+#secondSection a:hover,
+#secondSection a:active {
+	color: #333;
+}
+
 .grid {
 	padding: 20px 20px 20px 20px;
 	max-width: 1300px;
