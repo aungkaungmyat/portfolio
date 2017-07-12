@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/skill.css" type="text/css">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
   <!-- <link rel="stylesheet" href="css/nav.css" type="text/css"> -->
-  <script src="js/modernizr.custom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-overscroll/1.7.7/jquery.overscroll.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js">
-  </script>
+
 </head>
 
 <body>
   <div id="myMenu"></div>
+
   <!-- <div class="container0" id="menu">
   <div class="wrap clearfix">
    <div class="dotstyle dotstyle-tooltip">
@@ -43,6 +44,17 @@
   <div id="fullpage">
 
     <div class="section">Some section</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="section">
     <div id="secondSection">
@@ -214,11 +226,215 @@
     </div>
 
   </div>
-    <div class="section">Some section</div>
+
+
+
+
+
+
+
+    <div class="section">
+
+    <div id="thirdSection">
+      <header class="cd-header">
+    		<h1>Projects</h1>
+    	</header>
+
+    	<main class="cd-main-content">
+    		<div class="cd-tab-filter-wrapper">
+    			<div class="cd-tab-filter">
+    				<ul class="cd-filters">
+    					<li class="placeholder">
+    						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+    					</li>
+    					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+    					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
+    					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
+    				</ul> <!-- cd-filters -->
+    			</div> <!-- cd-tab-filter -->
+    		</div> <!-- cd-tab-filter-wrapper -->
+
+    		<section class="cd-gallery">
+    			<ul>
+    				<li class="mix color-1 check1 radio2 option3">
+    					<div class="outer">
+    						<div class="text">
+    							<p>Plutus</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<i class="icon-python" title="Python"></i>
+    							<i class="icon-ruby-on-rails-alt" title="Ruby On Rails"></i>
+    							<i class="icon-html5" title="HTML5"></i>
+    							<i class="icon-css3" title="CSS3"></i>
+    							<i class="icon-javascript" title="Javascript"></i>
+    						</div>
+
+    						<div class="readButton" id="plutusButton">
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="plutusimg" src="images/plutus/plutus.png" alt="Image 1">
+
+    					</div>
+    				</li>
+    				<li class="mix color-2 check2 radio2 option2">
+    					<div class="outer">
+    						<div class="text">
+    							<p>Gathering</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<i class="icon-nodejs" title="NodeJS"></i>
+    							<i class="icon-mongodb" title="MongoDB"></i>
+    							<i class="icon-html5" title="HTML5"></i>
+    							<i class="icon-css3" title="CSS3"></i>
+    							<i class="icon-javascript" title="Javascript"></i>
+    						</div>
+
+    						<div class="readButton" id=>
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="gatheringimg" src="images/gathering/gathering.jpg" alt="Image 2">
+
+    					</div>
+    					</li>
+    				<li class="mix color-1 check3 radio3 option1">
+    					<div class="outer">
+    						<div class="text">
+    							<p>Apollo11</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<i class="icon-nodejs" title="NodeJS"></i>
+    							<i class="icon-mongodb" title="MongoDB"></i>
+    							<i class="icon-html5" title="HTML5"></i>
+    							<i class="icon-css3" title="CSS3"></i>
+    							<i class="icon-javascript" title="Javascript"></i>
+    						</div>
+
+    						<div class="readButton">
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="lostimg" src="images/lost/LostLogo.png" alt="Image 3">
+
+    					</div>
+    					</li>
+    				<li class="mix color-1 check3 radio2 option4">
+    					<div class="outer">
+    						<div class="text">
+    							<p>GitDate</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<i class="icon-php" title="PHP"></i>
+    							<i class="icon-database-alt2" title="database.txt"></i>
+    							<i class="icon-html5" title="HTML5"></i>
+    							<i class="icon-css3" title="CSS3"></i>
+    							<i class="icon-javascript" title="Javascript"></i>
+    						</div>
+
+    						<div class="readButton">
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="gitdateimg" src="images/gitdate/gitdate.jpg" alt="Image 4">
+
+    					</div>
+    					</li>
+    				<li class="mix color-1 check1 radio3 option2">
+    					<div class="outer">
+    						<div class="text">
+    							<p>Math-is-Love</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<div class="oneline">
+    								<i class="fa fa-apple" title="Swift"></i>
+    							</div>
+
+    						</div>
+
+    						<div class="readButton" id="mathButton">
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="mathimg"  src="images/math/math.png" alt="Image 5">
+
+    					</div>
+    					</li>
+    				<li class="mix color-2 check2 radio3 option3">
+    					<div class="outer">
+    						<div class="text">
+    							<p>Roll.io</p>
+    							<hr>
+    					  </div>
+
+    						<div class="icons">
+    							<div class="oneline">
+    								<i class="icon-unity" title="Unity"></i>
+    								<i class="icon-csharp" title="C#"></i>
+    							</div>
+    						</div>
+
+    						<div class="readButton" id="rollButton">
+    							<button>Read More</button>
+    						</div>
+
+    						<div class="overlay"></div>
+    						<div class="overlayRight"></div>
+
+    						<img id="rollimg" src="images/roll/roll.png" alt="Image 6">
+
+    					</div>
+    					</li>
+    				<li class="gap"></li>
+    				<li class="gap"></li>
+    				<li class="gap"></li>
+    			</ul>
+    		</section> <!-- cd-gallery -->
+
+
+
+
+    	</main> <!-- cd-main-content -->
+    </div>
+
+    </div>
     <div class="section">Some section</div>
   </div>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script src="js/skill.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 
 </html>

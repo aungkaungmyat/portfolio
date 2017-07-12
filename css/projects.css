@@ -19,6 +19,9 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+/*#thirdSection{
+
+}*/
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -426,15 +429,18 @@ xgallery
   font-style: bold;
 }
 
-.cd-gallery .fa .fa-apple{
-  /*transform: translateY(-100px);*/
-  c
-}
+
 
 .cd-gallery li:hover .icons{
   opacity: 1;
   transition-delay: .6s;
   transform: translate(-50%,-85px);
+}
+
+.cd-gallery li:hover .icons .fa-apple{
+  opacity: 1;
+  transition-delay: .6s;
+  transform: translate(-50%,-90px);
 }
 
 .cd-gallery .readButton{
