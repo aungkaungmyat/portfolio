@@ -387,7 +387,7 @@ function randomresult(){
 		 }
 	 }
 	 norepeat = rannum;
-	 console.log(norepeat)
+	//  console.log(norepeat)
 	//  randoms[Math.floor((Math.random() * 5))]();
 	randoms[norepeat]();
 }
