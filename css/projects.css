@@ -6,8 +6,6 @@
   margin: 0;
 	padding: 0;
 	border: 0;
-	/*font-size: 100%;*/
-	/*font: inherit;*/
 	vertical-align: baseline;
 }
 
@@ -416,10 +414,7 @@ xgallery
 }
 
 .cd-gallery .readButton button:hover{
-  /*border: none;*/
   color: #0e6a8c;
-  /*font-size: 15px;*/
-  /*padding: 10px;*/
   background-color: #fff;
 }
 
