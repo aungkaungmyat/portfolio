@@ -387,19 +387,12 @@ function randomresult(){
 		 }
 	 }
 	 norepeat = rannum;
-	//  console.log(norepeat)
-	//  randoms[Math.floor((Math.random() * 5))]();
 	randoms[norepeat]();
 }
 
 window.onload = function(){
 
-	// window.setInterval(function(){
-	// 	var nam = randomresult();
-	// 	console.log(nam);
-	// 	nam;
-	// 	// pairs.nam;
-	// },1000);
+
 	window.setInterval(randomresult,3000)
 	// window.setInterval(plutusChange, 5000);
 	// window.setInterval(gatheringChange, 5000);
@@ -411,9 +404,9 @@ window.onload = function(){
 
 }
 
-$(function(){
-    $(document).on('mouseenter', '#plutusimg', function(){
-        // document.getElementById("plutusimg").src = plutuses[0];
-				$('img').toggleClass('hidden');
-    });
-});
+// $(function(){
+//     $(document).on('mouseenter', '#plutusimg', function(){
+//         // document.getElementById("plutusimg").src = plutuses[0];
+// 				$('img').toggleClass('hidden');
+//     });
+// });

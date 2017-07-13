@@ -415,6 +415,14 @@ xgallery
   background-color: #0e6a8c;
 }
 
+.cd-gallery .readButton button:hover{
+  /*border: none;*/
+  color: #0e6a8c;
+  /*font-size: 15px;*/
+  /*padding: 10px;*/
+  background-color: #fff;
+}
+
 .cd-gallery li:hover .readButton{
   opacity: 1;
   transition-delay: 1s;
