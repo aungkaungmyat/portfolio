@@ -132,6 +132,12 @@ xtab-filter
   z-index: 1;
 }
 
+.cd-tab-filter a{
+  /* tabbed navigation style on mobile - dropdown */
+  cursor: pointer;
+}
+
+
 .cd-tab-filter ul {
   position: absolute;
   top: 0;
