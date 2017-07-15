@@ -1299,5 +1299,15 @@ body {
   height: 100%;
   /*float: right;*/
   left: 60%;
-  /*background-color: #152633;*/
+  background-color: #152633;
+  opacity: 0.6;
+}
+
+.contact-footer{
+  position: absolute;
+  background: #fff;
+  height: 10vh;
+  width: 100%;
+  z-index: 3;
+  bottom: 0;
 }
