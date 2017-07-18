@@ -134,7 +134,7 @@ xtab-filter
 
 .cd-tab-filter a{
   /* tabbed navigation style on mobile - dropdown */
-  cur
+  cursor: default;
 }
 
 
