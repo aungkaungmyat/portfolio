@@ -1303,6 +1303,15 @@ body {
   /*opacity: 0.6;*/
 }
 
+#contactItems{
+  /*position: relative;*/
+  height: 67%;
+  margin: 16vh 5px;
+  /*padding: -50px 5px 20px;*/
+  background-color: #fff;
+  opacity: 0.3;
+}
+
 .contact-footer{
   position: absolute;
   background: #345F7F;
