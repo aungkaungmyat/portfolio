@@ -1320,6 +1320,20 @@ body {
   width: 80%;
 }
 
+#contactItems .innerDiv{
+  position: relative;
+  height: 100%;
+}
+
+.innerDiv i{
+  position: absolute;
+  font-size: 2em;
+  margin-top: 5px;
+  top: 17%;
+  margin-left: 10px;
+  /*vertical-align: center;*/
+}
+
 #contactItems input{
   /*position: relative;*/
   width: 100%;
