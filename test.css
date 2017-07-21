@@ -1304,12 +1304,32 @@ body {
 }
 
 #contactItems{
-  /*position: relative;*/
+  /*z-index: 7;*/
+  position: relative;
   height: 67%;
   margin: 16vh 5px;
   /*padding: -50px 5px 20px;*/
   background-color: #fff;
-  opacity: 0.3;
+  /*background: transparent;*/
+  /*opacity: 0.1;*/
+  z-index: 5;
+}
+
+#contactItems .outDiv{
+  margin: 1em auto;
+  width: 80%;
+}
+
+#contactItems input{
+  /*position: relative;*/
+  width: 100%;
+  /*margin: 0 auto;*/
+  height: 3em;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 1.5em;
+
+  /*background: red;*/
 }
 
 .contact-footer{
