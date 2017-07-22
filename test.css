@@ -1329,8 +1329,8 @@ body {
   position: absolute;
   font-size: 2em;
   margin-top: 5px;
-  top: 17%;
-  margin-left: 10px;
+  top: 15%;
+  margin-left: 15px;
   /*vertical-align: center;*/
 }
 
@@ -1342,7 +1342,7 @@ body {
   margin-bottom: 10px;
   color: red;
   font-size: 1.5em;
-
+  padding-left: 40px;
   /*background: red;*/
 }
 
