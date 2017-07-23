@@ -1310,7 +1310,7 @@ body {
   height: 67%;
   margin: 16vh 5px;
   /*padding: -50px 5px 20px;*/
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   /*background: transparent;*/
   /*opacity: 0.1;*/
   z-index: 5;
@@ -1346,9 +1346,10 @@ body {
   /*margin: 0 auto;*/
   height: 3em;
   margin-bottom: 10px;
-  /*color: red;*/
+  color: white;
   font-size: 1.5em;
   padding-left: 40px;
+  background: #2A3642;
   /*background: red;*/
 }
 
@@ -1363,6 +1364,8 @@ body {
   font-size: 1.5em;
   padding-left: 40px;
   padding-top: 12px;
+  background: #2A3642;
+  color: white;
   /*background: red;*/
 }
 
