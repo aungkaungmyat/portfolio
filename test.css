@@ -1332,7 +1332,12 @@ body {
   margin-top: 5px;
   top: 15%;
   margin-left: 15px;
+  color: #fff;
   /*vertical-align: center;*/
+}
+
+.innerDiv #emailIcon{
+  margin-left: 13px;
 }
 
 .innerDiv #pencilIcon{
@@ -1360,13 +1365,11 @@ body {
   /*height: 3em;*/
   font-family: 'Lato', Calibri, Arial, sans-serif;
   margin-bottom: 10px;
-  /*color: red;*/
   font-size: 1.5em;
   padding-left: 40px;
   padding-top: 12px;
   background: #2A3642;
   color: white;
-  /*background: red;*/
 }
 
 .contact-footer{
