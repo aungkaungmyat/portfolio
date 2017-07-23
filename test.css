@@ -1334,6 +1334,10 @@ body {
   /*vertical-align: center;*/
 }
 
+.innerDiv #pencilIcon{
+  top: 5%;
+}
+
 #contactItems input{
   /*position: relative;*/
   width: 100%;
