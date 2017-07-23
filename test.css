@@ -1346,6 +1346,18 @@ body {
   /*background: red;*/
 }
 
+#contactItems textarea{
+  /*position: relative;*/
+  width: 100%;
+  /*margin: 0 auto;*/
+  /*height: 3em;*/
+  margin-bottom: 10px;
+  color: red;
+  font-size: 1.5em;
+  padding-left: 40px;
+  /*background: red;*/
+}
+
 .contact-footer{
   position: absolute;
   background: #345F7F;
