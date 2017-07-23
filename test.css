@@ -1355,6 +1355,7 @@ body {
   font-size: 1.5em;
   padding-left: 40px;
   background: #2A3642;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   /*background: red;*/
 }
 
@@ -1370,6 +1371,7 @@ body {
   padding-top: 12px;
   background: #2A3642;
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-footer{
