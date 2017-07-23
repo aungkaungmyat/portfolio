@@ -1335,7 +1335,7 @@ body {
 }
 
 .innerDiv #pencilIcon{
-  top: 5%;
+  top: 3.5%;
 }
 
 #contactItems input{
@@ -1359,6 +1359,7 @@ body {
   color: red;
   font-size: 1.5em;
   padding-left: 40px;
+  padding-top: 12px;
   /*background: red;*/
 }
 
