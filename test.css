@@ -1340,6 +1340,22 @@ body {
   /*vertical-align: center;*/
 }
 
+#emailAnimation{
+  animation-delay: 0.2s;
+}
+
+#subjectAnimation{
+  animation-delay: 0.4s;
+}
+
+#messageAnimation{
+  animation-delay: 0.6s;
+}
+
+#buttonAnimation{
+  animation-delay: 0.8s;
+}
+
 .innerDiv #emailIcon{
   margin-left: 13px;
 }
