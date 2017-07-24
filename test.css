@@ -1349,6 +1349,18 @@ body {
   margin-left: 13px;
 }
 
+.innerDiv #rocketIcon{
+  /*top: 3.5%;*/
+  /*position: inline;*/
+  font-size: 1.5em;
+  margin-left: -40px;
+  margin-top: 5px;
+}
+
+.innerDiv #buttonText{
+  margin-left: 2%;
+}
+
 #contactItems input{
   /*position: relative;*/
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -1386,7 +1398,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   color: #fff;
-  height: 2em;
+  height: 3em;
   width: 100%;
   border: none;
   background-color: #6FBCC2;
