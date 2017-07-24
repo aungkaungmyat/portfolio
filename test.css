@@ -1344,6 +1344,11 @@ body {
   top: 3.5%;
 }
 
+.innerDiv #subjectIcon{
+  /*top: 3.5%;*/
+  margin-left: 13px;
+}
+
 #contactItems input{
   /*position: relative;*/
   font-family: 'Lato', Calibri, Arial, sans-serif;
