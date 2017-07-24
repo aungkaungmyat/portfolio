@@ -1309,8 +1309,10 @@ body {
   position: relative;
   height: 67%;
   margin: 16vh 5px;
+  transform: translateX(-100px);
+  padding-top: 11vh;
   /*padding: -50px 5px 20px;*/
-  background-color: rgba(255, 255, 255, 0.1);
+  /*background-color: rgba(255, 255, 255, 0.1);*/
   /*background: transparent;*/
   /*opacity: 0.1;*/
   z-index: 5;
