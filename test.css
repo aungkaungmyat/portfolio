@@ -1381,6 +1381,17 @@ body {
 
 }
 
+#contactItems button{
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  height: 2em;
+  width: 100%;
+  border: none;
+  background-color: #6FBCC2;
+}
+
 #contactItems input:focus{
   /*box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);*/
   outline: none;
