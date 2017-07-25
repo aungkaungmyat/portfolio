@@ -17,7 +17,11 @@ $('#fullpage').fullpage({
                 if(anchorLink == 'fourthPage'){
 
    //    			alert("First slide loaded");
+                        $(this).find('#nameAnimation').addClass("animated lightSpeedIn");
                         $(this).find('#subjectAnimation').addClass("animated lightSpeedIn");
+                        $(this).find('#emailAnimation').addClass("animated lightSpeedIn");
+                        $(this).find('#messageAnimation').addClass("animated lightSpeedIn");
+                        $(this).find('#buttonAnimation').addClass("animated lightSpeedIn");
       		}
 
         },
