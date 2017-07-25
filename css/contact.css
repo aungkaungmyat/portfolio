@@ -1355,9 +1355,9 @@ h1 {
 
 .innerDiv i{
   position: absolute;
-  font-size: 2em;
+
   margin-top: 5px;
-  top: 15%;
+  /*top: 15%;*/
   margin-left: 15px;
   color: #fff;
   /*vertical-align: center;*/
@@ -1424,11 +1424,29 @@ h1 {
   #contactItems input{
     height: 2em;
   }
+  .innerDiv i{
+    top: 3%;
+    font-size: 1.8em;
+  }
+  .innerDiv #rocketIcon{
+    /*top: 3.5%;*/
+    /*position: inline;*/
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 300px) and (min-height: 800px){
   #contactItems input{
     height: 3em;
+  }
+  .innerDiv i{
+    top: 15%;
+    font-size: 2em;
+  }
+  .innerDiv #rocketIcon{
+    /*top: 3.5%;*/
+    /*position: inline;*/
+    margin-top: 5px;
   }
 }
 
