@@ -1429,9 +1429,10 @@ h1 {
     font-size: 1.8em;
   }
   .innerDiv #rocketIcon{
-    /*top: 3.5%;*/
-    /*position: inline;*/
     margin-top: 10px;
+  }
+  #galaxy{
+    margin-top: 8vh;
   }
 }
 
@@ -1444,9 +1445,10 @@ h1 {
     font-size: 2em;
   }
   .innerDiv #rocketIcon{
-    /*top: 3.5%;*/
-    /*position: inline;*/
     margin-top: 5px;
+  }
+  #galaxy{
+    margin-top: 0vh;
   }
 }
 
