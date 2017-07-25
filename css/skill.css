@@ -186,7 +186,7 @@ svg {
 .skill-topic{
   text-align: center;
   font-family: 'Raleway', Arial, sans-serif;
-  font-size: 4em;
+  /*font-size: 4em;*/
   font-weight: bold;
 }
 
@@ -205,5 +205,17 @@ svg {
 	.grid li {
 		width: 100%;
 		min-width: 300px;
+	}
+}
+
+@media screen and (min-height: 300px) {
+	.skill-topic{
+	  font-size: 2.5em;
+	}
+}
+
+@media screen and (min-height: 800px) {
+	.skill-topic{
+	  font-size: 4em;
 	}
 }
