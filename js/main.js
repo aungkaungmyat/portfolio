@@ -12,11 +12,7 @@ $('#fullpage').fullpage({
 		// slidesNavPosition: 'bottom',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         afterLoad: function(anchorLink, index){
-                console.log('check');
-                // var loadedSlide = $(this);
                 if(anchorLink == 'fourthPage'){
-
-   //    			alert("First slide loaded");
                         $(this).find('#topicAnimation').addClass("animated fadeInDown");
                         $(this).find('#galaxy').addClass("animated rollIn");
                         $(this).find('#footAnimation').addClass("animated fadeInUp");
