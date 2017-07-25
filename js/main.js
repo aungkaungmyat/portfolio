@@ -17,6 +17,9 @@ $('#fullpage').fullpage({
                 if(anchorLink == 'fourthPage'){
 
    //    			alert("First slide loaded");
+                        $(this).find('.contact-topic').addClass("animated bounceInDown");
+                        $(this).find('#galaxy').addClass("animated rollIn");
+                        $(this).find('.contact-footer').addClass("animated bounceInUp");
                         $(this).find('#nameAnimation').addClass("animated lightSpeedIn");
                         $(this).find('#subjectAnimation').addClass("animated lightSpeedIn");
                         $(this).find('#emailAnimation').addClass("animated lightSpeedIn");

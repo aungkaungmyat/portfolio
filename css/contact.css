@@ -62,7 +62,12 @@ table {
   width: 60%;
   height: 100%;
   animation-delay: 1s;
+  opacity: 0;
   /*perspective: 4000;*/ }
+
+#galaxy .animated{
+  opacity: 1;
+}
 
 #solar-system {
   position: absolute;
@@ -1457,6 +1462,11 @@ h1 {
   z-index: 3;
   bottom: 0;
   animation-delay: 1.4s;
+  opacity: 0;
+}
+
+.contact-footer .animated .bounceInUp{
+  opacity: 1;
 }
 
 .contact-footer .socialMedia{
@@ -1483,7 +1493,12 @@ h1 {
   z-index: 5;
   width: 100%;
   animation-delay: 1.4s;
+  opacity: 0;
   /*height: 3vh;*/
+}
+
+.contact-topic .animated{
+  opacity: 1;
 }
 
 .contact-topic hr{
