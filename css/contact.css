@@ -1327,11 +1327,13 @@ h1 {
   margin: 1em auto;
   width: 80%;
   /*visibility: hidden;*/
+  opacity: 0;
 }
 
-/*#contactItems .outDiv .animated{
-  visibility:
-}*/
+#contactItems .outDiv .animated .lightInSpeed{
+  /*visibility: visible;*/
+  opacity: 1;
+}
 
 #contactItems .innerDiv{
   position: relative;
