@@ -1326,7 +1326,12 @@ h1 {
 #contactItems .outDiv{
   margin: 1em auto;
   width: 80%;
+  /*visibility: hidden;*/
 }
+
+/*#contactItems .outDiv .animated{
+  visibility:
+}*/
 
 #contactItems .innerDiv{
   position: relative;

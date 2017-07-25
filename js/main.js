@@ -11,6 +11,16 @@ $('#fullpage').fullpage({
 		// slidesNavigation: false,
 		// slidesNavPosition: 'bottom',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+        afterLoad: function(anchorLink, index){
+                console.log('check');
+                // var loadedSlide = $(this);
+                if(anchorLink == 'fourthPage'){
+
+   //    			alert("First slide loaded");
+                        $(this).find('#subjectAnimation').addClass("animated lightSpeedIn");
+      		}
+
+        },
         navigation: true,
         navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         // showActiveTooltip: true,
@@ -20,16 +30,7 @@ $('#fullpage').fullpage({
         // responsiveHeigth: 823
         // sectionSelector: '.page',
 
-        scrollOverflow: true,
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-                console.log('check');
-                var loadedSlide = $(this);
-                if(anchorLink == 'fourthPage'){
-                        console.log('got  in here');
-   //    			alert("First slide loaded");
-                        $(this).find('#subjectAnimation').addClass("animated lightSpeedIn");
-      		}
+        scrollOverflow: true
 
-        }
 });
 });
