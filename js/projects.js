@@ -303,36 +303,36 @@ function rollChange(){
 var randoms = [
 	function plutusChange(){
 
-  $("#plutusimg").fadeTo(1000,0.30, function() {
+  $("#plutusimg").fadeTo(2000,0, function() {
       $("#plutusimg").attr("src",plutuses[plutuscount]);
 			plutuscount++;
 			if(plutuscount == plutuses.length){
 				plutuscount = 0;
 			}
-  }).fadeTo(500,1);
+  }).fadeTo(1000,1);
 	},
 	function gatheringChange(){
 
-	$("#gatheringimg").fadeTo(1000,0.30, function() {
+	$("#gatheringimg").fadeTo(2000,0, function() {
       $("#gatheringimg").attr("src",gatherings[gatheringcount]);
 			gatheringcount++;
 			if(gatheringcount == gatherings.length){
 				gatheringcount = 0;
 			}
-  }).fadeTo(500,1);
+  }).fadeTo(1000,1);
 	},
 	function lostChange(){
 		// document.getElementById("lostimg").src = losts[lostcount];
 		// lostcount++;
 		// if(lostcount == losts.length){
 		// 	lostcount = 0;
-		$("#lostimg").fadeTo(1000,0.30, function() {
+		$("#lostimg").fadeTo(2000,0, function() {
 	      $("#lostimg").attr("src",losts[lostcount]);
 				lostcount++;
 				if(lostcount == losts.length){
 					lostcount = 0;
 				}
-	  }).fadeTo(500,1);
+	  }).fadeTo(1000,1);
 	// }
 	},
 	function gitdateChange(){
@@ -341,22 +341,22 @@ var randoms = [
 	// 	if(gitcount == gitdates.length){
 	// 		gitcount = 0;
 	// }
-	$("#gitdateimg").fadeTo(1000,0.30, function() {
+	$("#gitdateimg").fadeTo(2000,0, function() {
       $("#gitdateimg").attr("src",gitdates[gitcount]);
 			gitcount++;
 			if(gitcount == gitdates.length){
 				gitcount = 0;
 			}
-  }).fadeTo(500,1);
+  }).fadeTo(1000,1);
 	},
 	function mathChange(){
-	$("#mathimg").fadeTo(1000,0.30, function() {
+	$("#mathimg").fadeTo(2000,0, function() {
       $("#mathimg").attr("src",maths[mathcount]);
 			mathcount++;
 			if(mathcount == maths.length){
 				mathcount = 0;
 			}
-  }).fadeTo(500,1);
+  }).fadeTo(1000,1);
 	},
 	function rollChange(){
 	// 	document.getElementById("rollimg").src = rolls[rollcount];
@@ -364,13 +364,13 @@ var randoms = [
 	// 	if(rollcount == rolls.length){
 	// 		rollcount = 0;
 	// }
-	$("#rollimg").fadeTo(1000,0.30, function() {
+	$("#rollimg").fadeTo(2000,0, function() {
       $("#rollimg").attr("src",rolls[rollcount]);
 			rollcount++;
 			if(rollcount == rolls.length){
 				rollcount = 0;
 			}
-  }).fadeTo(500,1);
+  }).fadeTo(1000,1);
 	}]
 // var randomcount =  0;
 var rannum;
@@ -394,12 +394,12 @@ window.onload = function(){
 
 
 	window.setInterval(randomresult,3000)
-	// window.setInterval(plutusChange, 5000);
-	// window.setInterval(gatheringChange, 5000);
-	// window.setInterval(mathChange, 5000);
-	// window.setInterval(gitdateChange, 5000);
-	// window.setInterval(lostChange, 5000);
-	// window.setInterval(rollChange, 5000);
+	// window.setInterval(plutusChange, 10000);
+	// window.setInterval(gatheringChange, 10000);
+	// window.setInterval(mathChange, 10000);
+	// window.setInterval(gitdateChange, 10000);
+	// window.setInterval(lostChange, 10000);
+	// window.setInterval(rollChange, 10000);
 
 
 }
