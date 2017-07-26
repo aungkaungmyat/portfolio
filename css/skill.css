@@ -19,7 +19,7 @@
 
 .grid {
 	padding: 20px 20px 20px 20px;
-	max-width: 1300px;
+	/*max-width: 1300px;*/
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
@@ -216,6 +216,9 @@ svg {
 		width: 120px;
 		height: 81px;
 	}
+	.grid{
+		max-width: 1000px;
+	}
 	.grid figure{
 		width: 285px;
 		height: 224px;
@@ -230,13 +233,16 @@ svg {
 	}
 }
 
-@media screen and (min-width: 1140px) and (min-height: 940px) {
+@media screen and (min-width: 1140px) and (min-height: 800px) {
 	.skill-topic{
 	  font-size: 4em;
 	}
 	.image svg{
 		width: 160px;
 		height: 108px;
+	}
+	.grid{
+		max-width: 1300px;
 	}
 	.grid figure{
 		width: 300px;
