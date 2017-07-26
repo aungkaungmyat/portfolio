@@ -216,6 +216,13 @@ svg {
 		width: 120px;
 		height: 81px;
 	}
+	.grid figure{
+		width: 260px;
+		height: 136px;
+	}
+	.skill-topic{
+		margin-top: -20vh;
+	}
 }
 
 @media screen and (min-width: 1200px) and (min-height: 800px) {
@@ -225,5 +232,12 @@ svg {
 	.image svg{
 		width: 160px;
 		height: 108px;
+	}
+	.grid figure{
+		width: 300px;
+		height: 251px;
+	}
+	.skill-topic{
+		margin-top: 0em;
 	}
 }
