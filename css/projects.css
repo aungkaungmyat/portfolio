@@ -226,6 +226,26 @@ xtab-filter
     display: inline-block;
   }
 }
+
+@media only screen and (max-height: 800px) and (min-width: 800px) {
+  .cd-tab-filter{
+    width: 120px;
+    height: 40px;
+    /*font-size: 0.5em;*/
+  }
+
+  .cd-tab-filter a{
+    /*width: 120px;
+    height: 40px;*/
+    line-height: 40px;
+    font-size: 12px;
+    height: 50%;
+  }
+
+
+
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-tab-filter {
     /* tabbed navigation on big devices */
@@ -503,6 +523,7 @@ xgallery
 }
 
 @media only screen and (max-height: 800px) and (min-width: 800px) {
+
   .cd-header{
     height: 100px;
     margin-top: -5vh;
@@ -715,7 +736,13 @@ xfilter
     padding: 70px 10%;
   }
 }
+/*@media only screen and (max-height: 800px) and (min-width: 800px) {
+  .cd-filter{
+    height: 50%;
+    width: 200px;
+  }
 
+}*/
 
 
 
