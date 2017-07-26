@@ -217,11 +217,8 @@ svg {
 		height: 81px;
 	}
 	.grid figure{
-		width: 280px;
+		width: 285px;
 		height: 224px;
-	}
-	.skill-topic{
-		margin-top: -20vh;
 	}
 	.grid li{
 		width: 300px;
@@ -244,9 +241,6 @@ svg {
 	.grid figure{
 		width: 300px;
 		height: 251px;
-	}
-	.skill-topic{
-		margin-top: 0em;
 	}
 	.grid li{
 		width: 340px;
