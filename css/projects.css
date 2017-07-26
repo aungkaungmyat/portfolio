@@ -228,7 +228,12 @@ xtab-filter
 }
 
 @media only screen and (max-height: 800px) and (min-width: 800px) {
-  .cd-tab-filter{
+  .cd-tab-filter-wrapper{
+    width: 50%;
+    height: 40px;
+  }
+
+  .cd-filter{
     width: 120px;
     height: 40px;
     /*font-size: 0.5em;*/
