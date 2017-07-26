@@ -208,14 +208,22 @@ svg {
 	}
 }
 
-@media screen and (min-height: 300px) {
+@media screen and (min-width: 300px) and (min-height: 300px){
 	.skill-topic{
 	  font-size: 2.5em;
 	}
+	.image svg{
+		width: 120px;
+		height: 81px;
+	}
 }
 
-@media screen and (min-height: 800px) {
+@media screen and (min-width: 1200px) and (min-height: 800px) {
 	.skill-topic{
 	  font-size: 4em;
+	}
+	.image svg{
+		width: 160px;
+		height: 108px;
 	}
 }
