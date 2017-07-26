@@ -236,12 +236,9 @@ xtab-filter
   .cd-filter{
     width: 120px;
     height: 40px;
-    /*font-size: 0.5em;*/
   }
 
   .cd-tab-filter a{
-    /*width: 120px;
-    height: 40px;*/
     line-height: 40px;
     font-size: 12px;
     height: 50%;
@@ -541,6 +538,7 @@ xgallery
 
   .cd-gallery {
     width: 100%;
+    margin-top: -6vh;
     padding: 50px 13%;
     float: right;
     -webkit-transition: width 0.3s;
@@ -550,7 +548,7 @@ xgallery
   .cd-gallery li {
     /*margin-left: 0;
     width: 25%;*/
-    margin: 0 10px 2em;
+    margin: 0 10px 1.5em;
     width: 19em;
   }
   .cd-gallery img {
