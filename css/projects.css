@@ -546,11 +546,8 @@ xgallery
     transition: width 0.3s;
   }
   .cd-gallery li {
-    /*margin-left: 0;
-    width: 25%;*/
     margin: 0 10px 1.5em;
     width: 15.2em;
-    /*height: 13em;*/
   }
   .cd-gallery img {
     width: 100%;
@@ -561,6 +558,15 @@ xgallery
     /* reduce width when filter is visible */
     width: 80%;
   }
+
+  .cd-gallery .text{
+    font-size: 1.2em;
+  }
+
+  .cd-gallery .icons{
+    font-size: 20px;
+  }
+
   .cd-gallery .overlay{
     position: absolute;
     width: 0;
