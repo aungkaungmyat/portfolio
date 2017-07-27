@@ -469,6 +469,15 @@ xgallery
 
 .swal2-content a{
   text-decoration: none;
+  color: blue;
+}
+
+.swal2-content a:hover{
+  text-decoration: underline;
+}
+
+.swal2-content i{
+  color: #000;
 }
 
 @media only screen and (min-width: 768px) {
@@ -540,6 +549,7 @@ xgallery
     width: 100%;
     margin-top: -6vh;
     padding: 50px 13%;
+    padding-bottom: 0px;
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
