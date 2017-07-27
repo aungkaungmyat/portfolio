@@ -480,6 +480,12 @@ xgallery
   color: #000;
 }
 
+@media only screen and (max-width: 767px) {
+  .cd-gallery .icons{
+    letter-spacing: 5px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .cd-gallery {
     padding: 40px 11%;
