@@ -567,6 +567,15 @@ xgallery
     font-size: 20px;
   }
 
+  .cd-gallery .readButton button{
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .cd-gallery li:hover .icons{
+    transform: translate(-50%,-70px);
+  }
+
   .cd-gallery .overlay{
     position: absolute;
     width: 0;
