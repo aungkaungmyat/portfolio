@@ -21,9 +21,16 @@
 .chatbar{
   /*position: relative;*/
   width: 100%;
-  height: 7vh;
+  height: 5vh;
   background-color: #73ddf5;
   top: 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+.chatinput{
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  bottom: 0;
 }
