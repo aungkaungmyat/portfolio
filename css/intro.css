@@ -28,6 +28,13 @@
   border-top-right-radius: 3px;
 }
 
+.iconControls{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+
 .chatinput{
   position: absolute;
   width: 100%;
