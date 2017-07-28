@@ -67,3 +67,13 @@
   right: 0;
   bottom: 0;
 }
+
+.sendMsgButton:hover{
+  /*color: #73ddf5;*/
+  background-color: #73ddf5;
+  border: none;
+}
+
+.sendMsgButton:hover i{
+  color: #fff;
+}
