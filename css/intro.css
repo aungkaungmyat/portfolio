@@ -30,9 +30,14 @@
 
 .iconControls{
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 0;
   color: #fff;
+  letter-spacing: 1px;
+}
+
+.iconControls #minimizeIcon{
+  font-size: 12px;
 }
 
 .chatinput{
