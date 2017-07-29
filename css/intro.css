@@ -26,6 +26,8 @@
   transform: translateX(-50%);
 }*/
 
+
+/*comment - chat box*/
 .chatbox.hidechat{
   position: absolute;
   width: 400px;
@@ -57,16 +59,6 @@
 }
 
 .chatbox .chatbar{
-  /*z-index: 2;
-
-  visibility: visible;
-  bottom: 0;
-  width: 100%;
-  height: 5vh;
-  background-color: #73ddf5;
-
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;*/
   position: absolute;
   width: 100%;
   height: 3vh;
@@ -142,4 +134,16 @@
 
 .sendMsgButton:hover i{
   color: #fff;
+}
+/*end of chatbox*/
+
+.chatBackup{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 400px;
+  height: 32vh;
+  bottom: 3vh;
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
 }
