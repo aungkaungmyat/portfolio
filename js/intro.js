@@ -7,6 +7,9 @@ $(document).ready(function(){
 
 //when chatbox is closed
   $("#closeIcon").click(function(){
-    alert('close');
+    // $('.chatbox').addClass('hide');
+    // document.getElementsByClassName('chatbox').style.display =  "none";
+    document.getElementById('chatboxID').style.display = "none";
+    // $('.chatbox').fadeToggle(3000);
   })
 })

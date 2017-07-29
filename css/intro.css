@@ -20,6 +20,10 @@
   transform: translateX(-50%);
 }
 
+/*.chatbox .hide{
+  opacity: 0;
+}*/
+
 .chatbar{
   /*position: relative;*/
   width: 100%;
