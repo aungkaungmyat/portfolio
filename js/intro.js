@@ -12,4 +12,8 @@ $(document).ready(function(){
     document.getElementById('chatboxID').style.display = "none";
     // $('.chatbox').fadeToggle(3000);
   })
+
+  $('#minimizeIcon').click(function(){
+    $('#minimizeIcon').addClass('fa-window-maximize').removeClass('fa-window-minimize');
+  })
 })
