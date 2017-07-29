@@ -139,6 +139,9 @@
 
 .chatBackup{
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
   width: 400px;
   height: 32vh;
@@ -146,4 +149,18 @@
   border-radius: 3px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.chatBackInfo{
+  /*position: relative;*/
+  /*top: 0;*/
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  margin: 0 auto;
+  width: 80%;
+  height: 30%;
+  color: #fff;
+  /*background-color: #000;*/
+  text-align: center;
 }
