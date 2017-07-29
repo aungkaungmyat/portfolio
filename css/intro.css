@@ -152,15 +152,10 @@
 }
 
 .chatBackInfo{
-  /*position: relative;*/
-  /*top: 0;*/
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  /*top: 50%;*/
-  /*left: 50%;*/
   margin: 0 auto;
   width: 80%;
   height: 30%;
   color: #fff;
-  /*background-color: #000;*/
   text-align: center;
 }

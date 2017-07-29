@@ -10,6 +10,7 @@ $(document).ready(function(){
     // $('.chatbox').addClass('hide');
     // document.getElementsByClassName('chatbox').style.display =  "none";
     document.getElementById('chatboxID').style.display = "none";
+    document.getElementById('chatBackupID').style.display = "none";
     // $('.chatbox').fadeToggle(3000);
   })
 
@@ -19,7 +20,7 @@ $(document).ready(function(){
     if(this.className === "fa fa-window-minimize"){
     $('#minimizeIcon').addClass('fa-window-maximize').removeClass('fa-window-minimize');
     $("#chatboxID").removeClass('hidechat');
-    
+
     }
     else{
     $('#minimizeIcon').addClass('fa-window-minimize').removeClass('fa-window-maximize');
