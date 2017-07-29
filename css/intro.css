@@ -38,6 +38,10 @@
   letter-spacing: 1px;
 }
 
+.iconControls i:hover{
+  cursor: pointer;
+}
+
 .iconControls #minimizeIcon{
   font-size: 12px;
 }
