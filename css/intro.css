@@ -26,6 +26,15 @@
   transform: translateX(-50%);
 }*/
 
+/*comment - greeting text*/
+.greetingText{
+  position: absolute;
+  /*left: 50%;*/
+  text-align: center;
+  top: 7vh;
+  width: 100%;
+  height: 15vh;
+}
 
 /*comment - chat box*/
 .chatbox.hidechat{

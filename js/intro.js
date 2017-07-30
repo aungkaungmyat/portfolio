@@ -7,8 +7,6 @@ $(document).ready(function(){
 
 //when chatbox is closed
   $("#closeIcon").click(function(){
-    // $('.chatbox').addClass('hide');
-    // document.getElementsByClassName('chatbox').style.display =  "none";
     document.getElementById('chatboxID').style.display = "none";
     document.getElementById('chatBackupID').style.display = "none";
     // $('.chatbox').fadeToggle(3000);
