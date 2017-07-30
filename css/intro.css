@@ -86,6 +86,11 @@
 }
 
 /*comment - chat box*/
+.chatbox.hideAll{
+  /*visibility: hidden;*/
+  opacity: 0;
+}
+
 .chatbox.hidechat{
   position: absolute;
   width: 400px;

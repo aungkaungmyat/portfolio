@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+  $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+    function(e) {
+
+    // code to execute after animation ends
+    // myBox.removeClass('change-size');
+    $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").addClass("hidechat animated bounceIn");
+    });
+
 //when send button is clicked
   $(".sendMsgButton").click(function(){
     alert('clicked');
