@@ -6,7 +6,9 @@ $(document).ready(function(){
     // code to execute after animation ends
     // myBox.removeClass('change-size');
     $("#chatboxID").removeClass("hideAll");
-    $("#chatboxID").addClass("hidechat animated bounceIn");
+    // $("#chatbackupID").toggle();
+    document.getElementById("chatBackupID").style.opacity = "1";
+    $("#chatboxID").addClass("hidechat animated fadeInUp");
     });
 
 //when send button is clicked

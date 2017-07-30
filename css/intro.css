@@ -87,7 +87,6 @@
 
 /*comment - chat box*/
 .chatbox.hideAll{
-  /*visibility: hidden;*/
   opacity: 0;
 }
 
@@ -200,6 +199,11 @@
 }
 /*end of chatbox*/
 
+/*comment - chatbox backup info*/
+/*.chatBackup.hideAll{
+  opacity: 0;
+}*/
+
 .chatBackup{
   position: absolute;
   display: flex;
@@ -211,6 +215,8 @@
   bottom: 3vh;
   border-radius: 3px;
   left: 50%;
+  /*display: none;*/
+  opacity: 0;
   transform: translateX(-50%);
 }
 
