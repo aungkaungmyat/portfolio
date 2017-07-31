@@ -4,7 +4,10 @@ $(document).ready(function(){
   $("#chatboxID").removeClass("hideAll");
   $("#chatboxID").addClass("hidechat");
   document.getElementById("chatBackupID").style.opacity = "1";
-
+  setTimeout(function(){
+    // alert("Hello");
+    $('#messagesArea').append($('<li>').text('hi'));
+  },2000);
 
 // have to uncomment
   // $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
@@ -16,10 +19,14 @@ $(document).ready(function(){
   //
   //   });
   //
-  //   $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  //     function(e) {
-  //       document.getElementById("chatBackupID").style.opacity = "1";
-  //     });
+    $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+      function(e) {
+        document.getElementById("chatBackupID").style.opacity = "1";
+        setTimeout(function(){
+          // alert("Hello");
+          $('#messagesArea').append($('<li>').text('hi'));
+        },2000);
+      });
 // have to uncomment
 
 //when send button is clicked
