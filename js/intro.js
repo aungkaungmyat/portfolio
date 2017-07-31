@@ -9,9 +9,9 @@ $(document).ready(function(){
     // code to execute after animation ends
     $("#chatboxID").removeClass("hideAll");
     $("#chatboxID").addClass("hidechat");
-    setTimeout(function(){
-      document.getElementById("chatBackupID").style.opacity = "1";
-    },3000)
+    // setTimeout(function(){
+    //
+    // },3000)
 
     // $("#chatboxID").removeClass("hideAll");
     //
@@ -21,6 +21,12 @@ $(document).ready(function(){
     // console.log(el.style.transform);
     // document.getElementById("chatBackupID").style.opacity = "1";
     });
+
+    $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+      function(e) {
+        document.getElementById("chatBackupID").style.opacity = "1";
+      });
+
 
 //when send button is clicked
   $(".sendMsgButton").click(function(){

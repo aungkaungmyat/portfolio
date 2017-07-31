@@ -106,7 +106,6 @@
   visibility: visible;
   z-index: 1;
   transform: translateX(-50%);
-  /*transform: translateX(-50%);*/
 }
 
 .chatbox{
@@ -165,6 +164,14 @@
 
 .iconControls #minimizeIcon{
   font-size: 12px;
+}
+
+.chatbox .chatinput{
+  opacity: 0;
+}
+
+.chatbox.hidechat .chatinput{
+  opacity: 1;
 }
 
 .chatinput{
