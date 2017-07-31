@@ -22,7 +22,7 @@ $(document).ready(function(){
     $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
         document.getElementById("chatBackupID").style.opacity = "1";
-        setInterval(function(){
+        setTimeout(function(){
 
           $('#messagesArea').append($('<li>').text('hi'));
         },1000);
