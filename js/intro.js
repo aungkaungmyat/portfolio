@@ -7,10 +7,12 @@ $(document).ready(function(){
     function(e) {
 
     // code to execute after animation ends
-    // $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").removeClass("hideAll");
     $("#chatboxID").addClass("hidechat");
-    $("#chatboxID").fadeIn();
-    document.getElementById("chatBackupID").style.opacity = "1";
+    setTimeout(function(){
+      document.getElementById("chatBackupID").style.opacity = "1";
+    },3000)
+
     // $("#chatboxID").removeClass("hideAll");
     //
     // // $("#chatboxID").addClass("hidechat animated bounceInUp");

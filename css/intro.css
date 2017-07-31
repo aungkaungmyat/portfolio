@@ -87,9 +87,9 @@
 
 /*comment - chat box*/
 
-/*.chatbox.hideAll{
+.chatbox.hideAll{
   opacity: 0;
-}*/
+}
 
 .chatbox.hidechat{
   position: absolute;
