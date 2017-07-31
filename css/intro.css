@@ -168,6 +168,8 @@
 
 /*comment - messages*/
 #messagesArea{
+  display: flex;
+  flex-direction: column-reverse;
   width: 100%;
   height: 25vh;
   margin:5vh 0 0 0;
@@ -177,8 +179,8 @@
 }
 
 #messagesArea li{
-  background-color: rgb(42, 158, 162);
 
+  background-color: rgb(42, 158, 162);
 }
 
 
