@@ -1,32 +1,26 @@
 $(document).ready(function(){
 
 
+  $("#chatboxID").removeClass("hideAll");
+  $("#chatboxID").addClass("hidechat");
+  document.getElementById("chatBackupID").style.opacity = "1";
 
 
-  $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-    function(e) {
-
-    // code to execute after animation ends
-    $("#chatboxID").removeClass("hideAll");
-    $("#chatboxID").addClass("hidechat");
-    // setTimeout(function(){
-    //
-    // },3000)
-
-    // $("#chatboxID").removeClass("hideAll");
-    //
-    // // $("#chatboxID").addClass("hidechat animated bounceInUp");
-    // $("#chatboxID").slideDown();
-    // var el = document.getElementById("chatboxID");
-    // console.log(el.style.transform);
-    // document.getElementById("chatBackupID").style.opacity = "1";
-    });
-
-    $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-      function(e) {
-        document.getElementById("chatBackupID").style.opacity = "1";
-      });
-
+// have to uncomment
+  // $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+  //   function(e) {
+  //
+  //   // code to execute after animation ends
+  //   $("#chatboxID").removeClass("hideAll");
+  //   $("#chatboxID").addClass("hidechat");
+  //
+  //   });
+  //
+  //   $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+  //     function(e) {
+  //       document.getElementById("chatBackupID").style.opacity = "1";
+  //     });
+// have to uncomment
 
 //when send button is clicked
   $(".sendMsgButton").click(function(){
