@@ -1,14 +1,23 @@
 $(document).ready(function(){
 
+
+
+
   $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
     function(e) {
 
     // code to execute after animation ends
-    // myBox.removeClass('change-size');
-    $("#chatboxID").removeClass("hideAll");
-    // $("#chatbackupID").toggle();
+    // $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").addClass("hidechat");
+    $("#chatboxID").fadeIn();
     document.getElementById("chatBackupID").style.opacity = "1";
-    $("#chatboxID").addClass("hidechat animated fadeInUp");
+    // $("#chatboxID").removeClass("hideAll");
+    //
+    // // $("#chatboxID").addClass("hidechat animated bounceInUp");
+    // $("#chatboxID").slideDown();
+    // var el = document.getElementById("chatboxID");
+    // console.log(el.style.transform);
+    // document.getElementById("chatBackupID").style.opacity = "1";
     });
 
 //when send button is clicked
