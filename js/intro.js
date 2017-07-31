@@ -26,6 +26,10 @@ $(document).ready(function(){
 
           $('#messagesArea').append($('<li>').text('hi'));
         },1000);
+        setInterval(function(){
+
+          $('#messagesArea').append($('<li>').text('hello'));
+        },1000);
       });
 // have to uncomment
 
