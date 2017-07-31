@@ -1,29 +1,30 @@
 $(document).ready(function(){
 
 
-  $("#chatboxID").removeClass("hideAll");
-  $("#chatboxID").addClass("hidechat");
-  document.getElementById("chatBackupID").style.opacity = "1";
-  setTimeout(function(){
-    // alert("Hello");
-    $('#messagesArea').append($('<li>').text('hi'));
-  },2000);
+  // $("#chatboxID").removeClass("hideAll");
+  // $("#chatboxID").addClass("hidechat");
+  // document.getElementById("chatBackupID").style.opacity = "1";
+  // setTimeout(function(){
+  //   // alert("Hello");
+  //   $('#messagesArea').append($('<li>').text('hi'));
+  // },2000);
 
 // have to uncomment
-  // $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  //   function(e) {
-  //
-  //   // code to execute after animation ends
-  //   $("#chatboxID").removeClass("hideAll");
-  //   $("#chatboxID").addClass("hidechat");
-  //
-  //   });
-  //
-    $("#chatboxID").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+  $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+    function(e) {
+
+    // code to execute after animation ends
+    $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").addClass("hidechat");
+
+    });
+
+    $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
+        // alert('hi');
         document.getElementById("chatBackupID").style.opacity = "1";
         setTimeout(function(){
-          // alert("Hello");
+
           $('#messagesArea').append($('<li>').text('hi'));
         },2000);
       });
