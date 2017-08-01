@@ -180,19 +180,22 @@
 
 #messagesArea li{
 
-  background-color: rgb(42, 158, 162);
+  /*background-color: rgb(42, 158, 162);*/
   text-align: right;
 }
 
 
 #messagesArea li:nth-child(odd){
-  background-color: rgb(42, 158, 162);
+  /*background-color: rgb(42, 158, 162);*/
   text-align: left;
 }
 
 #messagesArea li p{
+  display:inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
   margin-right: 7px;
-  border: 1px solid #fff;
+  border: 1.5px solid #000;
 }
 
 #messagesArea li:nth-child(odd) p{
@@ -200,7 +203,7 @@
   text-align: right;*/
   margin-left: 5px;
   margin-right: 0;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
 }
 
 /*#messagesArea li:nth-child(even) p{

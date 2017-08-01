@@ -33,7 +33,7 @@ $(document).ready(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').append(
-              $('<p>').text('hi')));
+              $('<p>').text('hi nice to meet you')));
         },1000);
       });
 
