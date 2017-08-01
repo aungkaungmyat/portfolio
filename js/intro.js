@@ -26,14 +26,14 @@ $(document).ready(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').append(
-              $('<p>').text('hi')));
+              $('<p>').text('KoolMan')));
         },1000);
 
         setInterval(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').append(
-              $('<p>').text('hi nice to meet you')));
+              $('<p>').text('hi nice to meet you, how you doing let me know haha')));
         },1000);
       });
 
