@@ -21,20 +21,24 @@ $(document).ready(function(){
 
     $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
+        $("#spinnerID").removeClass("hideAll");
+        setTimeout(function(){
+          $("#spinnerID").addClass("hideAll");
+        },1000);
         document.getElementById("chatBackupID").style.opacity = "1";
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').addClass('animated bounceInUp').append(
               $('<p>').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
-        },1000);
+        },2000);
 
-      //   setInterval(function(){
-      //     // $('#messagesArea').append($('<li>').text('hi'));
-      //     $('#messagesArea').append(
-      //       $('<li>').append(
-      //         $('<p>').text('hi nice to meet you, how you doing let me know haha')));
-      //   },1000);
+        setInterval(function(){
+          // $('#messagesArea').append($('<li>').text('hi'));
+          $('#messagesArea').append(
+            $('<li>').append(
+              $('<p>').text('hi nice to meet you, how you doing let me know haha')));
+        },3000);
       });
 
 // have to uncomment

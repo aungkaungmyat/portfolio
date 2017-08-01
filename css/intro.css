@@ -219,6 +219,10 @@
 
 
 /*comment - three dot loading animation*/
+.spinner.hideAll{
+  visibility: hidden;
+}
+
 .spinner {
   position: absolute;
   left: 5px;
@@ -228,6 +232,7 @@
   text-align: center;
   border: 1.5px solid #000;
   border-radius: 10px;
+  visibility: visible;
 }
 
 .spinner > div {
