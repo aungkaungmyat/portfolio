@@ -33,7 +33,8 @@ $('#fullpage').fullpage({
         // responsiveHeigth: 823
         // sectionSelector: '.page',
 
-        scrollOverflow: true
+        scrollOverflow: true,
+        normalScrollElements: '#messagesArea'
 
 });
 });
