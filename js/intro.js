@@ -30,16 +30,28 @@ $(document).ready(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').addClass('animated bounceInUp').append(
-              $('<p>').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
+              $('<p>').addClass('messages').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
         },2000);
 
+        var count = 0;
+        var ps = document.getElementsByClassName("messages");
         setInterval(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').append(
-              $('<p>').text('hi nice to meet you, how you doing let me know haha')));
+              $('<p>').addClass('messages').text('hi nice to meet you, how you doing let me know haha')));
+              // $("p:first").replaceWith("<p>hi nice to meet you, how you doing let me know haha</p>");
+              count++;
+              console.log(ps);
+              if(count > 1){
+                ps[0].innerHTML = "messages (0)";
+                ps[1].innerHTML = "messages (1)";
+              }
         },3000);
-      });
+
+});
+
+
 
 // have to uncomment
 
