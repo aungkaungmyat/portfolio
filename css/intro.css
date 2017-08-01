@@ -184,6 +184,12 @@
 }
 
 
+#messagesArea li:nth-child(odd){
+  background-color: rgb(42, 158, 162);
+  text-align: right;
+}
+
+
 .chatbox .chatinput{
   opacity: 0;
 }

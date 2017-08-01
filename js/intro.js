@@ -23,14 +23,20 @@ $(document).ready(function(){
       function(e) {
         document.getElementById("chatBackupID").style.opacity = "1";
         setTimeout(function(){
-
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
             $('<li>').append(
               $('<p>').text('hi')));
         },1000);
 
+        setInterval(function(){
+          // $('#messagesArea').append($('<li>').text('hi'));
+          $('#messagesArea').append(
+            $('<li>').append(
+              $('<p>').text('hi')));
+        },1000);
       });
+
 // have to uncomment
 
 //when send button is clicked
