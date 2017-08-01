@@ -181,13 +181,32 @@
 #messagesArea li{
 
   background-color: rgb(42, 158, 162);
+  text-align: right;
 }
 
 
 #messagesArea li:nth-child(odd){
   background-color: rgb(42, 158, 162);
-  text-align: right;
+  text-align: left;
 }
+
+#messagesArea li p{
+  margin-right: 7px;
+  border: 1px solid #fff;
+}
+
+#messagesArea li:nth-child(odd) p{
+  /*background-color: rgb(42, 158, 162);
+  text-align: right;*/
+  margin-left: 5px;
+  margin-right: 0;
+  border: 1px solid #fff;
+}
+
+/*#messagesArea li:nth-child(even) p{
+  margin-left: 5px;
+  border: 1px solid #fff;
+}*/
 
 
 .chatbox .chatinput{
