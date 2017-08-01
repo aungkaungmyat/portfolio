@@ -189,8 +189,10 @@
 }
 
 
-#messagesArea li:nth-child(odd){
-  /*background-color: rgb(42, 158, 162);*/
+/*#messagesArea li:nth-child(odd){
+  text-align: left;
+}*/
+#messagesArea li.leftMsg{
   text-align: left;
 }
 
@@ -204,12 +206,13 @@
   border: 1.5px solid #000;
 }
 
-#messagesArea li:nth-child(odd) p{
-  /*background-color: rgb(42, 158, 162);
-  text-align: right;*/
+/*#messagesArea li:nth-child(odd) p{
   margin-left: 5px;
   margin-right: 50px;
-  /*border: 1px solid #fff;*/
+}*/
+#messagesArea li.leftMsg p{
+  margin-left: 5px;
+  margin-right: 50px;
 }
 
 /*#messagesArea li:nth-child(even) p{

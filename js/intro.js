@@ -29,7 +29,7 @@ $(document).ready(function(){
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
-            $('<li>').addClass('animated bounceInUp').append(
+            $('<li>').addClass('animated bounceInUp leftMsg').append(
               $('<p>').addClass('messages').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
         },2000);
 
