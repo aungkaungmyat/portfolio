@@ -25,16 +25,16 @@ $(document).ready(function(){
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
-            $('<li>').append(
-              $('<p>').text('KoolMan')));
+            $('<li>').addClass('animated bounceInUp').append(
+              $('<p>').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
         },1000);
 
-        setInterval(function(){
-          // $('#messagesArea').append($('<li>').text('hi'));
-          $('#messagesArea').append(
-            $('<li>').append(
-              $('<p>').text('hi nice to meet you, how you doing let me know haha')));
-        },1000);
+      //   setInterval(function(){
+      //     // $('#messagesArea').append($('<li>').text('hi'));
+      //     $('#messagesArea').append(
+      //       $('<li>').append(
+      //         $('<p>').text('hi nice to meet you, how you doing let me know haha')));
+      //   },1000);
       });
 
 // have to uncomment
