@@ -30,12 +30,12 @@ $(document).ready(function(){
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
           $('#messagesArea').append(
-            $('<li>').addClass('animated bounceInUp leftMsg').append(
+            $('<li>').attr('id', '1').addClass('animated bounceInUp leftMsg').append(
               $('<p>').addClass('messages').text("Hi, I'm Aung. I am a sophomore studying Computer Science at Purdue University. How can I mention your name?")));
         },2000);
 
-        var count = 0;
-        var ps = document.getElementsByClassName("messages");
+        // var count = 0;
+        // var ps = document.getElementsByClassName("messages");
         // setInterval(function(){
         //   // $('#messagesArea').append($('<li>').text('hi'));
         //   $('#messagesArea').append(
@@ -94,7 +94,11 @@ $(document).ready(function(){
 function sendMessage() {
      console.log($('.messageBox').val());
      $('#messagesArea').append(
-       $('<li>').addClass('animated bounceInUp rightMsg').append(
+       $('<li>').attr('id', '2').addClass('animated bounceInUp rightMsg').append(
          $('<p>').addClass('messages').text($('.messageBox').val())));
      document.getElementById("messageBoxID").value = "";
+
+     jQuery("#1").before(jQuery("#2"));
+
+     var ps = document.getElementsByClassName("messages");
 }
