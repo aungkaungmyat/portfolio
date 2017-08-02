@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+var checkAnimation = 0;
 
   $("#chatboxID").removeClass("hideAll");
   $("#chatboxID").addClass("hidechat");
@@ -22,10 +22,17 @@ $(document).ready(function(){
 
     $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
+
+        if(checkAnimation > 0){
+          return;
+        }
         $("#spinnerID").removeClass("hideAll");
         setTimeout(function(){
           $("#spinnerID").addClass("hideAll");
         },1800);
+
+        checkAnimation++;
+
         document.getElementById("chatBackupID").style.opacity = "1";
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
@@ -49,7 +56,6 @@ $(document).ready(function(){
         //         ps[1].innerHTML = "messages (1)";
         //       }
         // },3000);
-
 });
 
 
