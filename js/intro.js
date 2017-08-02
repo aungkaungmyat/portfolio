@@ -100,5 +100,18 @@ function sendMessage() {
 
      jQuery("#1").before(jQuery("#2"));
 
+     setTimeout(function(){
+       // $('#messagesArea').append($('<li>').text('hi'));
+       $('#messagesArea').append(
+         $('<li>').attr('id', '3').addClass('animated bounceInUp leftMsg').append(
+           $('<p>').addClass('messages').text("Testing")));
+
+var temp = jQuery("#3")
+
+jQuery("#2").before(jQuery("#3"));
+// jQuery("#1").before(jQuery("#2"));
+// jQuery("#3").before(jQuery("#1"));
+     },2000);
+
      var ps = document.getElementsByClassName("messages");
 }
