@@ -56,8 +56,15 @@ $(document).ready(function(){
 // have to uncomment
 
 //when send button is clicked
+// function sendMessage(){
+//   console.log($('.messageBox'));
+// }
+
+
   $(".sendMsgButton").click(function(){
-    alert('clicked');
+    // alert('clicked');
+    console.log($('.messageBox').val());
+    ClearFields();
   });
 
 //when chatbox is closed
@@ -81,3 +88,9 @@ $(document).ready(function(){
     }
   })
 })
+
+
+function ClearFields() {
+
+     document.getElementById("messageBoxID").value = "";
+}
