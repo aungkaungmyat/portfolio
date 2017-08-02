@@ -115,15 +115,32 @@ function firstResponse(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
       $('<li>').attr('id', '3').addClass('animated bounceInUp leftMsg').append(
-        $('<p>').addClass('messages').text("Hi " + messageInput + ". Hope you are having a great day")));
+        $('<p>').addClass('messages').text("Hi " + messageInput + ". I am a cheerful person and I love to see people wearing smiles. Therefore, I focus on working projects that can improve peoples' lives, which will in turn make them happy. By the way, may I know how you spend your free time?")));
        jQuery("#2").before(jQuery("#3"));
 
   },2000);
 }
 
+function secondResponse(){
+  setTimeout(function(){
+    $("#spinnerID").removeClass("hideAll");
+  },1000);
+
+  setTimeout(function(){
+    $("#spinnerID").addClass("hideAll");
+  },1800);
+  setTimeout(function(){
+    // $('#messagesArea').append($('<li>').text('hi'));
+    $('#messagesArea').append(
+      $('<li>').attr('id', '5').addClass('animated bounceInUp leftMsg').append(
+        $('<p>').addClass('messages').text("I like your way of enjoying free time. As for me, I mostly either hang out with friends trying new things or stay silent figuaring out my own assumptions of mysterious theroies of the world. Sometimes, I spend my time trying to learn new skills because I enjoy jumping out of my comfort zone.")));
+       jQuery("#4").before(jQuery("#5"));
+
+  },2000);
+}
 
 // ]
-var messageMethods = [firstResponse];
+var messageMethods = [firstResponse,secondResponse];
 
 
 // send message and clear the input when button is clicked
