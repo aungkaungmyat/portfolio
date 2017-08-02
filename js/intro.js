@@ -25,7 +25,7 @@ $(document).ready(function(){
         $("#spinnerID").removeClass("hideAll");
         setTimeout(function(){
           $("#spinnerID").addClass("hideAll");
-        },1000);
+        },1800);
         document.getElementById("chatBackupID").style.opacity = "1";
         setTimeout(function(){
           // $('#messagesArea').append($('<li>').text('hi'));
@@ -90,9 +90,18 @@ $(document).ready(function(){
   })
 })
 
+
+var messageInput;
 // functions to called when a new message is received
-var messageMethods = [
-  function firstMsg(){
+// var messageMethods = [
+function firstResponse(){
+  setTimeout(function(){
+    $("#spinnerID").removeClass("hideAll");
+  },1000);
+
+  setTimeout(function(){
+    $("#spinnerID").addClass("hideAll");
+  },1800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
@@ -101,13 +110,18 @@ var messageMethods = [
        jQuery("#2").before(jQuery("#3"));
 
   },2000);
-},
-]
+}
+
+
+// ]
+var messageMethods = [firstResponse];
 
 
 // send message and clear the input when button is clicked
 function sendMessage() {
-     console.log($('.messageBox').val());
+    //  console.log($('.messageBox').val());
+    // console.log(document.getElementById('messageBoxID').value);
+    messageInput = document.getElementById('messageBoxID').value;
      $('#messagesArea').append(
        $('<li>').attr('id', '2').addClass('animated bounceInUp rightMsg').append(
          $('<p>').addClass('messages').text($('.messageBox').val())));
@@ -115,7 +129,7 @@ function sendMessage() {
 
      jQuery("#1").before(jQuery("#2"));
 
-     messageMethods[0]();
-
+    //  messageMethods[0]();
+    messageMethods[0]('a string');
 
 }
