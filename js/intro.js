@@ -62,9 +62,9 @@ $(document).ready(function(){
 
 
   $(".sendMsgButton").click(function(){
-    // alert('clicked');
-    console.log($('.messageBox').val());
-    ClearFields();
+
+
+    sendMessage();
   });
 
 //when chatbox is closed
@@ -89,8 +89,8 @@ $(document).ready(function(){
   })
 })
 
-
-function ClearFields() {
-
+// send message and clear the input when button is clicked
+function sendMessage() {
+     console.log($('.messageBox').val());
      document.getElementById("messageBoxID").value = "";
 }

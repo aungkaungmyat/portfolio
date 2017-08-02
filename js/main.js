@@ -12,7 +12,14 @@ $('#fullpage').fullpage({
 		// slidesNavPosition: 'bottom',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         afterLoad: function(anchorLink, index){
-                if(anchorLink == 'fourthPage'){
+                if(anchorLink == 'firstPage'){
+                    $(document).keypress(function(e) {
+                        if(e.which == 13) {
+                            sendMessage();
+                        }
+                    });
+                }
+                else if(anchorLink == 'fourthPage'){
                         $(this).find('#topicAnimation').addClass("animated fadeInDown");
                         $(this).find('#galaxy').addClass("animated rollIn");
                         $(this).find('#footAnimation').addClass("animated fadeInUp");
