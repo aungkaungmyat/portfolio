@@ -170,6 +170,9 @@ function thirdResponse(){
 
   },9000);
 
+  setTimeout(function(){
+    $("#closeIcon").addClass("animated infinite tada");
+  },10000)
 }
 
 // ]
