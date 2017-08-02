@@ -90,6 +90,21 @@ $(document).ready(function(){
   })
 })
 
+// functions to called when a new message is received
+var messageMethods = [
+  function firstMsg(){
+  setTimeout(function(){
+    // $('#messagesArea').append($('<li>').text('hi'));
+    $('#messagesArea').append(
+      $('<li>').attr('id', '3').addClass('animated bounceInUp leftMsg').append(
+        $('<p>').addClass('messages').text("Testing")));
+       jQuery("#2").before(jQuery("#3"));
+
+  },2000);
+},
+]
+
+
 // send message and clear the input when button is clicked
 function sendMessage() {
      console.log($('.messageBox').val());
@@ -100,18 +115,7 @@ function sendMessage() {
 
      jQuery("#1").before(jQuery("#2"));
 
-     setTimeout(function(){
-       // $('#messagesArea').append($('<li>').text('hi'));
-       $('#messagesArea').append(
-         $('<li>').attr('id', '3').addClass('animated bounceInUp leftMsg').append(
-           $('<p>').addClass('messages').text("Testing")));
+     messageMethods[0]();
 
-var temp = jQuery("#3")
 
-jQuery("#2").before(jQuery("#3"));
-// jQuery("#1").before(jQuery("#2"));
-// jQuery("#3").before(jQuery("#1"));
-     },2000);
-
-     var ps = document.getElementsByClassName("messages");
 }
