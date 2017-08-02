@@ -172,6 +172,7 @@ function thirdResponse(){
 
   setTimeout(function(){
     $("#closeIcon").addClass("animated infinite tada");
+    $("#closeIcon").css('color', 'red');
   },10000)
 }
 
