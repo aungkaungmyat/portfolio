@@ -92,6 +92,9 @@ $(document).ready(function(){
 
 
 var messageInput;
+var messageID = 2;
+var swapID = 1;
+var responseCount = 0;
 // functions to called when a new message is received
 // var messageMethods = [
 function firstResponse(){
@@ -106,7 +109,7 @@ function firstResponse(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
       $('<li>').attr('id', '3').addClass('animated bounceInUp leftMsg').append(
-        $('<p>').addClass('messages').text("Testing")));
+        $('<p>').addClass('messages').text("Hi " + messageInput + ". Hope you are having a great day")));
        jQuery("#2").before(jQuery("#3"));
 
   },2000);
@@ -123,13 +126,17 @@ function sendMessage() {
     // console.log(document.getElementById('messageBoxID').value);
     messageInput = document.getElementById('messageBoxID').value;
      $('#messagesArea').append(
-       $('<li>').attr('id', '2').addClass('animated bounceInUp rightMsg').append(
+       $('<li>').attr('id', messageID).addClass('animated bounceInUp rightMsg').append(
          $('<p>').addClass('messages').text($('.messageBox').val())));
      document.getElementById("messageBoxID").value = "";
 
-     jQuery("#1").before(jQuery("#2"));
+     messageID += 2;
 
+    //  jQuery("#1").before(jQuery("#2"));
+    jQuery("#" + swapID).before(jQuery("#" + (swapID+1)));
+
+    swapID += 2;
     //  messageMethods[0]();
-    messageMethods[0]('a string');
+    messageMethods[responseCount++]('a string');
 
 }
