@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 
+
   $("#chatboxID").removeClass("hideAll");
   $("#chatboxID").addClass("hidechat");
   // document.getElementById("chatBackupID").style.opacity = "1";
@@ -35,19 +36,19 @@ $(document).ready(function(){
 
         var count = 0;
         var ps = document.getElementsByClassName("messages");
-        setInterval(function(){
-          // $('#messagesArea').append($('<li>').text('hi'));
-          $('#messagesArea').append(
-            $('<li>').append(
-              $('<p>').addClass('messages').text('hi nice to meet you, how you doing let me know haha')));
-              // $("p:first").replaceWith("<p>hi nice to meet you, how you doing let me know haha</p>");
-              count++;
-              console.log(ps);
-              if(count > 1){
-                ps[0].innerHTML = "messages (0)";
-                ps[1].innerHTML = "messages (1)";
-              }
-        },3000);
+        // setInterval(function(){
+        //   // $('#messagesArea').append($('<li>').text('hi'));
+        //   $('#messagesArea').append(
+        //     $('<li>').append(
+        //       $('<p>').addClass('messages').text('hi nice to meet you, how you doing let me know haha')));
+        //       // $("p:first").replaceWith("<p>hi nice to meet you, how you doing let me know haha</p>");
+        //       count++;
+        //       console.log(ps);
+        //       if(count > 1){
+        //         ps[0].innerHTML = "messages (0)";
+        //         ps[1].innerHTML = "messages (1)";
+        //       }
+        // },3000);
 
 });
 
@@ -92,5 +93,8 @@ $(document).ready(function(){
 // send message and clear the input when button is clicked
 function sendMessage() {
      console.log($('.messageBox').val());
+     $('#messagesArea').append(
+       $('<li>').addClass('animated bounceInUp rightMsg').append(
+         $('<p>').addClass('messages').text($('.messageBox').val())));
      document.getElementById("messageBoxID").value = "";
 }

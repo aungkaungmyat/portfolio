@@ -182,13 +182,15 @@
   overflow-y: scroll;
 }
 
-#messagesArea li{
+/*#messagesArea li.{
+  text-align: right;
+}*/
+
+#messagesArea li.rightMsg{
 
   /*background-color: rgb(42, 158, 162);*/
   text-align: right;
 }
-
-
 /*#messagesArea li:nth-child(odd){
   text-align: left;
 }*/
@@ -205,6 +207,7 @@
   margin: 10px 7px 10px 60px;
   border: 1.5px solid #000;
 }
+
 
 /*#messagesArea li:nth-child(odd) p{
   margin-left: 5px;
