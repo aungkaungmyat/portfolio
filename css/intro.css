@@ -222,8 +222,12 @@
   margin-left: 5px;
   border: 1px solid #fff;
 }*/
-
-
+.messages.hideAll{
+  opacity: 0;
+}
+.messages{
+  opacity: 1;
+}
 /*comment - three dot loading animation*/
 .spinner.hideAll{
   visibility: hidden;

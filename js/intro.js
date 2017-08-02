@@ -142,19 +142,22 @@ function secondResponse(){
 
 function thirdResponse(){
   setTimeout(function(){
+
     $('#messagesArea').append(
       $('<li>').attr('id', '6').addClass('animated bounceInUp leftMsg').append(
-        $('<p>').addClass('messages').text(" ")));
+        $('<p>').attr('id', 'thirdMsgID').addClass('messages hideAll').text(" ")));
        jQuery("#5").before(jQuery("#6"));
   },2500)
 
 
   setTimeout(function(){
     $("#spinnerID").removeClass("hideAll");
+
   },3000);
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
+
   },3800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
@@ -162,6 +165,7 @@ function thirdResponse(){
     //   $('<li>').attr('id', '6').addClass('animated bounceInUp leftMsg').append(
     //     $('<p>').addClass('messages').text("GoodByes")));
     //    jQuery("#5").before(jQuery("#6"));
+    $("#thirdMsgID").removeClass("hideAll");
     $('#6 .messages').text('continue reading');
 
   },4000);
