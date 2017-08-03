@@ -86,6 +86,14 @@
 
 }
 
+/*comment - name title*/
+.nameTitle{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*comment - chat box*/
 
 .chatbox.hideAll{
