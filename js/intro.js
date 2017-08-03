@@ -115,6 +115,8 @@ var checkAnimation = 0;
     $('.greetingContent').addClass('animated zoomOutUp');
     $('.nameTitle').removeClass('hideAll');
     $('.nameTitle').addClass('moveLeft');
+    $('.aboutMe').removeClass('hideAll');
+    $('.aboutMe').addClass('showAbout');
   })
 
   $('#minimizeIcon').click(function(){

@@ -107,7 +107,7 @@
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 50%;
+  top: 45%;
   opacity: 1;
   color: blue;
   transform: translate(-50%,-50%);
@@ -119,6 +119,30 @@
 
 .nameTitle hr{
   width: 50%;
+}
+
+/*comment - about me*/
+.aboutMe{
+  position: absolute;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  transition: all 0.5s linear;
+}
+
+.aboutMe.hideAll{
+  opacity: 0;
+}
+
+.aboutMe.showAbout{
+  position: absolute;
+  opacity: 1;
+  left: 50%;
+  bottom: 45%;
+  transform: translate(-50%, 50%);
 }
 
 /*comment - chat box*/
