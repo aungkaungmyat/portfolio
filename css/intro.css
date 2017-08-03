@@ -167,30 +167,30 @@
   font-size: 12px;
 }
 
-#messageAreaDiv{
+/*#messageAreaDiv{
   min-width: 1px;
   height: 25vh;
   margin: 5vh 0 0 0;
   padding: 0;
   overflow-y: auto;
-}
+}*/
 
 /*comment - messages*/
 #messagesArea{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   /*width: 100%;*/
-  /*min-width: 1px;
+  min-width: 1px;
   height: 25vh;
   margin: 5vh 0 0 0;
-  padding: 0;*/
-  /*height: 100%;*/
+  padding: 0;
+  height: 25vh;
   width: 100%;
   list-style-type: none;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   /*font-family: 'Open Sans', sans-serif;*/
   font-size: 1em;
-  /*overflow-y: auto;*/
+  overflow-y: auto;
 }
 
 /*#messagesArea li.{
