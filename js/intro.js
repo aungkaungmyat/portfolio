@@ -112,6 +112,7 @@ var checkAnimation = 0;
     document.getElementById('chatboxID').style.display = "none";
     document.getElementById('chatBackupID').style.display = "none";
     // $('.chatbox').fadeToggle(3000);
+    $('.greetingContent').addClass('animated zoomOutUp');
   })
 
   $('#minimizeIcon').click(function(){
