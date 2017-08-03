@@ -2,23 +2,19 @@ $(document).ready(function(){
 
 var checkAnimation = 0;
 
-  $("#chatboxID").removeClass("hideAll");
-  $("#chatboxID").addClass("hidechat");
-  // document.getElementById("chatBackupID").style.opacity = "1";
-  // setTimeout(function(){
-  //   // alert("Hello");
-  //   $('#messagesArea').append($('<li>').text('hi'));
-  // },2000);
+  // $("#chatboxID").removeClass("hideAll");
+  // $("#chatboxID").addClass("hidechat");
+
 
 // have to uncomment
-  // $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  //   function(e) {
-  //
-  //   // code to execute after animation ends
-  //   $("#chatboxID").removeClass("hideAll");
-  //   $("#chatboxID").addClass("hidechat");
-  //
-  //   });
+  $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+    function(e) {
+
+    // code to execute after animation ends
+    $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").addClass("hidechat");
+
+    });
 
     $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
@@ -173,7 +169,7 @@ function thirdResponse(){
   setTimeout(function(){
     $("#closeIcon").addClass("animated infinite tada");
     $("#closeIcon").css('color', 'red');
-  },10000)
+  },19000)
 }
 
 // ]
