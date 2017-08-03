@@ -87,10 +87,29 @@
 }
 
 /*comment - name title*/
+.nameTitle.hideAll{
+  opacity: 0;
+}
+
+
 .nameTitle{
   position: absolute;
   text-align: center;
   left: 50%;
+  top: 0;
+  opacity: 1;
+  color: red;
+  transform: translateX(-50%);
+  transition: all 0.5s linear;
+}
+
+.nameTitle.moveLeft{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  color: blue;
   transform: translateX(-50%);
 }
 
