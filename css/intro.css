@@ -178,7 +178,7 @@
 /*comment - messages*/
 #messagesArea{
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column-reverse;*/
   /*width: 100%;*/
   min-width: 1px;
   height: 25vh;

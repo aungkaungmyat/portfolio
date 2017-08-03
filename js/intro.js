@@ -24,10 +24,15 @@ $(document).ready(function(){
       var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 if(isChrome){
-  alert('1');
+  // alert('1');
+  $('#messagesArea').css({"flex-direction":"column-reverse"});
 }
 else if(isFirefox){
-  alert('2');
+  // alert('2');
+  $('#messagesArea').css({"flex-direction":"column"});
+}
+else{
+  $('#messagesArea').css({"flex-direction":"column-reverse"});
 }
 
 
