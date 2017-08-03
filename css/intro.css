@@ -99,7 +99,9 @@
   top: 0;
   opacity: 1;
   color: red;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);
+  transform: translateY(-50%);*/
+  transform: translate(-50%,-50%);
   transition: all 0.5s linear;
 }
 
@@ -110,7 +112,13 @@
   top: 50%;
   opacity: 1;
   color: blue;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);
+  transform: translateY(-50%);*/
+  transform: translate(-50%,-50%);
+}
+
+.nameTitle h1{
+  font-size: 3em;
 }
 
 /*comment - chat box*/
