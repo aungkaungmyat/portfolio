@@ -115,20 +115,25 @@
 
 .nameTitle h1{
   font-size: 3.5em;
+  font-weight: 250;
 }
 
-.nameTitle hr{
+/*.nameTitle hr{
   width: 50%;
-}
+}*/
 
 /*comment - about me*/
 .aboutMe{
   position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Lato', Calibri, Arial, sans-serif;*/
   text-align: center;
   padding: 7px;
   border-radius: 5px;
   left: 50%;
   bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
   transform: translate(-50%, 50%);
   transition: all 0.5s linear;
 }
@@ -143,6 +148,10 @@
   left: 50%;
   bottom: 45%;
   transform: translate(-50%, 50%);
+}
+
+.aboutMe p{
+  font-size: 1.5em;
 }
 
 /*comment - chat box*/
