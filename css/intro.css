@@ -107,14 +107,15 @@
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 40%;
+  /*top: 40%;*/
+  top: 40vh;
   opacity: 1;
   color: blue;
   transform: translate(-50%,-50%);
 }
 
 .nameTitle h1{
-  font-size: 3.5em;
+  font-size: 3.5vw;
   font-weight: 250;
 }
 
@@ -146,13 +147,16 @@
   position: absolute;
   opacity: 1;
   left: 50%;
-  bottom: 40%;
+  bottom: 45vh;
+  /*bottom: 40%;*/
   transform: translate(-50%, 50%);
 }
 
 .aboutMe p{
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
+
+
 
 /*comment - chat box*/
 
