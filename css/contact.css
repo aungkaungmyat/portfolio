@@ -1470,6 +1470,11 @@ h1 {
   }
 }
 
+@media screen and (min-width: 1170px) and (min-height: 800px){
+  .contact-topic{
+    margin-top: 0vh;
+  }
+}
 
 
 #contactItems textarea{

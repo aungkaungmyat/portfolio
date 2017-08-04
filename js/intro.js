@@ -184,18 +184,18 @@ function thirdResponse(){
       $('<li>').attr('id', '6').addClass('animated bounceInUp leftMsg').append(
         $('<p>').attr('id', 'thirdMsgID').addClass('messages hideAll').text(" ")));
        jQuery("#5").before(jQuery("#6"));
-  },7500)
+  },9500)
 
 
   setTimeout(function(){
     $("#spinnerID").removeClass("hideAll");
 
-  },8000);
+  },10000);
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
 
-  },8800);
+  },10800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     // $('#messagesArea').append(
@@ -205,12 +205,12 @@ function thirdResponse(){
     $("#thirdMsgID").removeClass("hideAll");
     $('#6 .messages').text('Thank you for the awesome conversation and hope you got to know a little bit about me. If you want to know more about me and get acquiantance, you can get my contact information at the end of my portfolio. For now, if you click the close button above, there will be a summary about this conversation and some additional facts about me. Please enjoy exploring my portfolio art and hope we will keep in touch.');
 
-  },9000);
+  },11000);
 
   setTimeout(function(){
     $("#closeIcon").addClass("animated infinite tada");
     $("#closeIcon").css('color', 'red');
-  },19000)
+  },21000)
 }
 
 // ]
