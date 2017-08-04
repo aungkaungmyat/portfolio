@@ -156,12 +156,22 @@
   font-size: 1.5vw;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (min-width: 700px) and (max-height: 800px) {
   .nameTitle.moveLeft{
     top: 40vh;
   }
   .aboutMe.showAbout{
     bottom: 40vh;
+  }
+}
+
+ /*comment - for phone screen*/
+@media screen and (max-width: 500px) and (max-height: 800px) {
+  .nameTitle.moveLeft{
+    top: 45vh;
+  }
+  .aboutMe.showAbout{
+    bottom: 45vh;
   }
 }
 
