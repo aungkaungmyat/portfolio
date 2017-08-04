@@ -39,19 +39,19 @@ else{
 // to prevent the message from showing twice
 var checkAnimation = 0;
 
-  $("#chatboxID").removeClass("hideAll");
-  $("#chatboxID").addClass("hidechat");
+  // $("#chatboxID").removeClass("hideAll");
+  // $("#chatboxID").addClass("hidechat");
 
 
 // have to uncomment
-  // $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  //   function(e) {
-  //
-  //   // code to execute after animation ends
-  //   $("#chatboxID").removeClass("hideAll");
-  //   $("#chatboxID").addClass("hidechat");
-  //
-  //   });
+  $(".lastGreeting").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+    function(e) {
+
+    // code to execute after animation ends
+    $("#chatboxID").removeClass("hideAll");
+    $("#chatboxID").addClass("hidechat");
+
+    });
 
     $("#chatboxID").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
       function(e) {
@@ -113,10 +113,13 @@ var checkAnimation = 0;
     document.getElementById('chatBackupID').style.display = "none";
     // $('.chatbox').fadeToggle(3000);
     $('.greetingContent').addClass('animated zoomOutUp');
-    $('.nameTitle').removeClass('hideAll');
-    $('.nameTitle').addClass('moveLeft');
-    $('.aboutMe').removeClass('hideAll');
-    $('.aboutMe').addClass('showAbout');
+
+    setTimeout(function(){
+      $('.nameTitle').removeClass('hideAll');
+      $('.aboutMe').removeClass('hideAll');
+      $('.aboutMe').addClass('showAbout');
+      $('.nameTitle').addClass('moveLeft');
+    },2000);
   })
 
   $('#minimizeIcon').click(function(){
