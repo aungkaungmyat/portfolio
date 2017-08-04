@@ -156,7 +156,14 @@
   font-size: 1.5vw;
 }
 
-
+@media screen and (max-height: 800px) {
+  .nameTitle.moveLeft{
+    top: 40vh;
+  }
+  .aboutMe.showAbout{
+    bottom: 40vh;
+  }
+}
 
 /*comment - chat box*/
 
