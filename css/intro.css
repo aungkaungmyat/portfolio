@@ -64,6 +64,16 @@
   animation: blink 1s infinite;
 }
 
+.greetingText a{
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+}
+
+.greetingText a:hover{
+  text-decoration: underline;
+}
+
 @keyframes blink{
   to{opacity: .0;}
 }

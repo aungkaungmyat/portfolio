@@ -107,20 +107,16 @@ var checkAnimation = 0;
     sendMessage();
   });
 
-//when chatbox is closed
-  $("#closeIcon").click(function(){
-    document.getElementById('chatboxID').style.display = "none";
-    document.getElementById('chatBackupID').style.display = "none";
-    // $('.chatbox').fadeToggle(3000);
-    $('.greetingContent').addClass('animated zoomOutUp');
 
-    setTimeout(function(){
-      $('.nameTitle').removeClass('hideAll');
-      $('.aboutMe').removeClass('hideAll');
-      $('.aboutMe').addClass('showAbout');
-      $('.nameTitle').addClass('moveLeft');
-    },2000);
+
+//when chatbox is closed
+  $("#skipAnimation").click(function(){
+    closeChat();
   })
+
+   $("#closeIcon").click(function(){
+     closeChat();
+  });
 
   $('#minimizeIcon').click(function(){
     // console.log(this.className)
@@ -239,5 +235,19 @@ function sendMessage() {
     swapID += 2;
     //  messageMethods[0]();
     messageMethods[responseCount++]('a string');
+}
 
+
+function closeChat(){
+  document.getElementById('chatboxID').style.display = "none";
+  document.getElementById('chatBackupID').style.display = "none";
+  // $('.chatbox').fadeToggle(3000);
+  $('.greetingContent').addClass('animated zoomOutUp');
+
+  setTimeout(function(){
+    $('.nameTitle').removeClass('hideAll');
+    $('.aboutMe').removeClass('hideAll');
+    $('.aboutMe').addClass('showAbout');
+    $('.nameTitle').addClass('moveLeft');
+  },2000);
 }
