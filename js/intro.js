@@ -110,9 +110,7 @@ var checkAnimation = 0;
 
 
 //when chatbox is closed
-  $("#skipAnimation").click(function(){
-    closeChat();
-  })
+  $("#skipAnimation").click
 
    $("#closeIcon").click(function(){
      closeChat();
@@ -138,7 +136,6 @@ var messageInput;
 var messageID = 2;
 var swapID = 1;
 var responseCount = 0;
-var endResponseCount = 6;
 // functions to called when a new message is received
 // var messageMethods = [
 function firstResponse(){
@@ -185,18 +182,18 @@ function thirdResponse(){
       $('<li>').attr('id', '6').addClass('animated bounceInUp leftMsg').append(
         $('<p>').attr('id', 'thirdMsgID').addClass('messages hideAll').text(" ")));
        jQuery("#5").before(jQuery("#6"));
-  },9500)
+  },7500)
 
 
   setTimeout(function(){
     $("#spinnerID").removeClass("hideAll");
 
-  },10000);
+  },8000);
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
 
-  },10800);
+  },8800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     // $('#messagesArea').append(
@@ -206,31 +203,12 @@ function thirdResponse(){
     $("#thirdMsgID").removeClass("hideAll");
     $('#6 .messages').text('Thank you for the awesome conversation and hope you got to know a little bit about me. If you want to know more about me and get acquiantance, you can get my contact information at the end of my portfolio. For now, if you click the close button above, there will be a summary about this conversation and some additional facts about me. Please enjoy exploring my portfolio art and hope we will keep in touch.');
 
-  },11000);
+  },9000);
 
   setTimeout(function(){
     $("#closeIcon").addClass("animated infinite tada");
     $("#closeIcon").css('color', 'red');
-  },21000)
-}
-
-function endResponse(){
-  setTimeout(function(){
-    $("#spinnerID").removeClass("hideAll");
-  },1000);
-
-  setTimeout(function(){
-    $("#spinnerID").addClass("hideAll");
-  },1800);
-  setTimeout(function(){
-    // $('#messagesArea').append($('<li>').text('hi'));
-    $('#messagesArea').append(
-      $('<li>').attr('id', '5').addClass('animated bounceInUp leftMsg').append(
-        $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy exploring my portfolio.")));
-       jQuery("#" + endResponseCount).before(jQuery("#") + (endResponseCount+1));
-
-  },2000);
-
+  },19000)
 }
 
 // ]
@@ -254,12 +232,7 @@ function sendMessage() {
 
     swapID += 2;
     //  messageMethods[0]();
-    if(responseCount < 2){
     messageMethods[responseCount++]('a string');
-    }
-    else{
-      endResponse();
-    }
 }
 
 
