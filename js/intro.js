@@ -138,6 +138,7 @@ var messageInput;
 var messageID = 2;
 var swapID = 1;
 var responseCount = 0;
+var endResponseCount = 6;
 // functions to called when a new message is received
 // var messageMethods = [
 function firstResponse(){
@@ -213,6 +214,25 @@ function thirdResponse(){
   },21000)
 }
 
+function endResponse(){
+  setTimeout(function(){
+    $("#spinnerID").removeClass("hideAll");
+  },1000);
+
+  setTimeout(function(){
+    $("#spinnerID").addClass("hideAll");
+  },1800);
+  setTimeout(function(){
+    // $('#messagesArea').append($('<li>').text('hi'));
+    $('#messagesArea').append(
+      $('<li>').attr('id', '5').addClass('animated bounceInUp leftMsg').append(
+        $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy exploring my portfolio.")));
+       jQuery("#" + endResponseCount).before(jQuery("#") + (endResponseCount+1));
+
+  },2000);
+
+}
+
 // ]
 var messageMethods = [firstResponse,secondResponse];
 
@@ -234,7 +254,12 @@ function sendMessage() {
 
     swapID += 2;
     //  messageMethods[0]();
+    if(responseCount < 2){
     messageMethods[responseCount++]('a string');
+    }
+    else{
+      endResponse();
+    }
 }
 
 
