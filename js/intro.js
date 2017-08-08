@@ -136,6 +136,7 @@ var messageInput;
 var messageID = 2;
 var swapID = 1;
 var responseCount = 0;
+var endResponse = false;
 // functions to called when a new message is received
 // var messageMethods = [
 function firstResponse(){
@@ -172,10 +173,15 @@ function secondResponse(){
        jQuery("#4").before(jQuery("#5"));
 
   },2000);
+  endResponse = true;
   thirdResponse();
 }
 
 function thirdResponse(){
+
+  messageID += 1;
+  swapID += 1;
+
   setTimeout(function(){
 
     $('#messagesArea').append(
@@ -211,6 +217,26 @@ function thirdResponse(){
   },19000)
 }
 
+function finalResponse(){
+  // setTimeout(function(){
+  //   $("#spinnerID").removeClass("hideAll");
+  // },1000);
+  //
+  // setTimeout(function(){
+  //   $("#spinnerID").addClass("hideAll");
+  // },1800);
+  // setTimeout(function(){
+  //   // $('#messagesArea').append($('<li>').text('hi'));
+  //   $('#messagesArea').append(
+  //     $('<li>').attr('id', '8').addClass('animated bounceInUp leftMsg').append(
+  //       $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy observing my portfolio.")));
+  //      jQuery("#8").before(jQuery("#7"));
+  //
+  // },2000);
+  // endResponse = true;
+  // thirdResponse();
+}
+
 // ]
 var messageMethods = [firstResponse,secondResponse];
 
@@ -225,14 +251,32 @@ function sendMessage() {
          $('<p>').addClass('messages').text($('.messageBox').val())));
      document.getElementById("messageBoxID").value = "";
 
+    //  if(!endResponse){
+    //    messageID += 2;
+    //  }
+    //  else{
+    //    messageID += 3;
+    //  }
      messageID += 2;
 
     //  jQuery("#1").before(jQuery("#2"));
     jQuery("#" + swapID).before(jQuery("#" + (swapID+1)));
 
+
+    // if(!endResponse){
+    //   swapID += 2;
+    // }
+    // else{
+    //   swapID += 3;
+    // }
     swapID += 2;
     //  messageMethods[0]();
+    if(!endResponse){
     messageMethods[responseCount++]('a string');
+    }
+    else{
+      finalResponse();
+    }
 }
 
 
