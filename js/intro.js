@@ -218,21 +218,22 @@ function thirdResponse(){
 }
 
 function finalResponse(){
-  // setTimeout(function(){
-  //   $("#spinnerID").removeClass("hideAll");
-  // },1000);
-  //
-  // setTimeout(function(){
-  //   $("#spinnerID").addClass("hideAll");
-  // },1800);
-  // setTimeout(function(){
-  //   // $('#messagesArea').append($('<li>').text('hi'));
-  //   $('#messagesArea').append(
-  //     $('<li>').attr('id', '8').addClass('animated bounceInUp leftMsg').append(
-  //       $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy observing my portfolio.")));
-  //      jQuery("#8").before(jQuery("#7"));
-  //
-  // },2000);
+  // console.log('final res')
+  setTimeout(function(){
+    $("#spinnerID").removeClass("hideAll");
+  },1000);
+
+  setTimeout(function(){
+    $("#spinnerID").addClass("hideAll");
+  },1800);
+  setTimeout(function(){
+    // $('#messagesArea').append($('<li>').text('hi'));
+    $('#messagesArea').append(
+      $('<li>').attr('id', '8').addClass('animated bounceInUp leftMsg').append(
+        $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy observing my portfolio.")));
+       jQuery("#7").before(jQuery("#8"));
+
+  },2000);
   // endResponse = true;
   // thirdResponse();
 }
