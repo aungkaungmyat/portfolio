@@ -137,6 +137,7 @@ var messageID = 2;
 var swapID = 1;
 var responseCount = 0;
 var endResponse = false;
+var endCount =  7;
 // functions to called when a new message is received
 // var messageMethods = [
 function firstResponse(){
@@ -229,10 +230,10 @@ function finalResponse(){
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
-      $('<li>').attr('id', '8').addClass('animated bounceInUp leftMsg').append(
+      $('<li>').attr('id', endCount+1).addClass('animated bounceInUp leftMsg').append(
         $('<p>').addClass('messages').text("This is the end of conversation. Hope you will enjoy observing my portfolio.")));
-       jQuery("#7").before(jQuery("#8"));
-
+       jQuery("#" + endCount).before(jQuery("#" + (endCount + 1)));
+       endCount += 2;
   },2000);
   // endResponse = true;
   // thirdResponse();
