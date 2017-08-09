@@ -69,6 +69,18 @@ table {
   opacity: 1;
 }
 
+/*comment - for phone screen*/
+@media screen and (max-width: 500px) and (max-height: 800px) {
+  #galaxy{
+    position: absolute;
+    left: 22vw;
+    /*margin-left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*margin: auto;*/
+  }
+}
+
+
 #solar-system {
   position: absolute;
   width: 100%;
