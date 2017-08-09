@@ -147,7 +147,7 @@ function firstResponse(){
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
-  },1800);
+  },2800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
@@ -155,7 +155,7 @@ function firstResponse(){
         $('<p>').addClass('messages').text("Hi " + messageInput + ". I am a cheerful person and I love to see people wearing smiles. Therefore, I focus on working projects that can improve peoples' lives, which will in turn make them happy. By the way, may I know how you spend your free time?")));
        jQuery("#2").before(jQuery("#3"));
 
-  },2000);
+  },3000);
 }
 
 function secondResponse(){
@@ -165,7 +165,7 @@ function secondResponse(){
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
-  },1800);
+  },2800);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     $('#messagesArea').append(
@@ -173,7 +173,7 @@ function secondResponse(){
         $('<p>').addClass('messages').text("I like your way of enjoying free time. As for me, I mostly either hang out with friends trying new things or stay silent figuaring out my own assumptions of mysterious theroies of the world. Sometimes, I spend my time trying to learn new skills because I enjoy jumping out of my comfort zone.")));
        jQuery("#4").before(jQuery("#5"));
 
-  },2000);
+  },3000);
   endResponse = true;
   thirdResponse();
 }
@@ -189,18 +189,18 @@ function thirdResponse(){
       $('<li>').attr('id', '6').addClass('animated bounceInUp leftMsg').append(
         $('<p>').attr('id', 'thirdMsgID').addClass('messages hideAll').text(" ")));
        jQuery("#5").before(jQuery("#6"));
-  },7500)
+  },9500)
 
 
   setTimeout(function(){
     $("#spinnerID").removeClass("hideAll");
 
-  },8000);
+  },10000);
 
   setTimeout(function(){
     $("#spinnerID").addClass("hideAll");
 
-  },8800);
+  },14500);
   setTimeout(function(){
     // $('#messagesArea').append($('<li>').text('hi'));
     // $('#messagesArea').append(
@@ -210,12 +210,12 @@ function thirdResponse(){
     $("#thirdMsgID").removeClass("hideAll");
     $('#6 .messages').text('Thank you for the awesome conversation and hope you got to know a little bit about me. If you want to know more about me and get acquiantance, you can get my contact information at the end of my portfolio. For now, if you click the close button above, there will be a summary about this conversation and some additional facts about me. Please enjoy exploring my portfolio art and hope we will keep in touch.');
 
-  },9000);
+  },15000);
 
   setTimeout(function(){
     $("#closeIcon").addClass("animated infinite tada");
     $("#closeIcon").css('color', 'red');
-  },19000)
+  },25000)
 }
 
 function finalResponse(){
