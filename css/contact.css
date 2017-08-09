@@ -1592,6 +1592,22 @@ h1 {
     transform: translateX(0);
   }
 
+
+  #contactItems input{
+    opacity: 0.5;
+  }
+
+  #contactItems textarea{
+    opacity: 0.5;
+  }
+
+  #contactItems input:hover{
+    opacity: 1;
+  }
+
+  #contactItems textarea:hover{
+    opacity: 1;
+  }
   /*#contactItems .outDiv{
     width: 100%;
   }*/
