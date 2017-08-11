@@ -1569,6 +1569,9 @@ h1 {
   width: 8vw;
 }
 
+.socialMedia .fa-file-text-o{
+  font-size: 23px;
+}
 
 @media screen and (max-width: 500px) and (max-height: 800px) {
   #galaxy{
