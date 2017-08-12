@@ -1400,6 +1400,10 @@ h1 {
   margin-left: 2%;
 }
 
+.innerDiv button:hover{
+  cursor: not-allowed;
+}
+
 #contactItems input{
   /*position: relative;*/
   font-family: 'Lato', Calibri, Arial, sans-serif;
