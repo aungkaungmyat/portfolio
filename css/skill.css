@@ -81,6 +81,10 @@
 	color: #fff;
 }
 
+.grid figcaption a:hover{
+	cursor: not-allowed;
+}
+
 /* Individual Caption Styles */
 
 /* Caption Style 1 */
