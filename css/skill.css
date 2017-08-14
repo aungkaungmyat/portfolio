@@ -81,9 +81,10 @@
 	color: #fff;
 }
 
-.grid figcaption a:hover{
+/*comment - for the bottom in skills*/
+/*.grid figcaption a:hover{
 	cursor: not-allowed;
-}
+}*/
 
 /* Individual Caption Styles */
 
