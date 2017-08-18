@@ -2,6 +2,6 @@ $(document).ready(function(){
   $("#messageSubmit").click(function(){
 
 
-    console.log('hi');
+    window.open('mailto:aungkaungmyat.olaf@gmail.com');
   });
 })
