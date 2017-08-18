@@ -1401,7 +1401,7 @@ h1 {
 }
 
 .innerDiv button:hover{
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 #contactItems input{
